@@ -2,11 +2,11 @@
 body {
   /* GROUP VARIABLES -- DECORATION -- COLOURS -- THEME
     =================================================== */
-  --colour-main: #6c9184;
+  --colour-main: #5bb18a;
   --colour-main-hover: #424242;
   --admin-colour-one: #bebebe;
   --admin-colour-two: rgb(253, 253, 253);
-  --admin-color-dark: hsl(255, 15%, 50%);
+  --admin-color-dark: #3090cd;
   --font-color-light: hsl(15, 15%, 95%);
 
   /* GROUP VARIABLES -- DECORATION -- TEXT
