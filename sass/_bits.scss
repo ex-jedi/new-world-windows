@@ -21,8 +21,8 @@ $grid-gap: 0 1rem;
 
 //* Font Stacks
 @mixin main-font-stack {
-  font-family: 'futura-pt', sans-serif;
-  font-weight: 700;
+  font-family: 'ff-dagny-web-pro', sans-serif;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -98,6 +98,7 @@ $font-colour-two: #6c9184;
 $font-colour-three: #91736c;
 $font-colour-four: #918f73;
 $font-colour-light: #f4f1f0;
+$font-colour-dark: #060709;
 
 $link-colour: #3c3cf6;
 $link-visited: #8608fb;
