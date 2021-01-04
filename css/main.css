@@ -36,10 +36,20 @@ h4 {
 
 section {
   overflow: hidden;
+  padding: 25rem 10rem;
 }
 
 p {
   margin: 0 auto 5rem;
+}
+
+ul,
+ol {
+  margin: 0 auto 5rem;
+}
+ul li,
+ol li {
+  margin-bottom: 1rem;
 }
 
 img {
@@ -116,7 +126,6 @@ a {
 
 .main-header {
   position: relative;
-  margin-bottom: 25rem;
 }
 
 .main-logo-wrapper {

@@ -27,13 +27,10 @@
 
 .section-text-wrapper {
   @include flex(column);
-  justify-content: space-around;
+  justify-content: space-between;
   padding: $paragraph-spacing-large;
-  font-size: $font-size-main;
+  font-size: $font-size-small;
 
   p {
-    &:last-of-type {
-      margin-bottom: 0;
-    }
   }
 }

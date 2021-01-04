@@ -21,10 +21,7 @@
 .section-text-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 10rem;
-  font-size: 4rem;
-}
-.section-text-wrapper p:last-of-type {
-  margin-bottom: 0;
+  font-size: 3rem;
 }

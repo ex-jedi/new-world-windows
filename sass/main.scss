@@ -58,12 +58,23 @@ h4 {
 
 section {
   overflow: hidden;
+  padding: $section-spacing-medium $section-spacing-extra-small;
 }
 
 //********** Paragraphs **********
 
 p {
   margin: 0 auto $paragraph-spacing-medium;
+}
+
+//********** Lists **********
+ul,
+ol {
+  margin: 0 auto $paragraph-spacing-medium;
+
+  li {
+    margin-bottom: $paragraph-spacing-tiny;
+  }
 }
 
 // *=========================================
@@ -147,7 +158,6 @@ a {
 
 .main-header {
   position: relative;
-  margin-bottom: $section-spacing-medium;
 }
 
 .main-logo-wrapper {
