@@ -43,6 +43,10 @@ img {
   display: block;
 }
 
+a {
+  text-decoration: none;
+}
+
 .main-site-button {
   font-size: 4rem;
   font-weight: bold;
@@ -52,20 +56,6 @@ img {
   border-style: solid;
   position: relative;
   transition: 0.3s all ease;
-}
-
-.main-nav {
-  width: -webkit-fit-content;
-  width: fit-content;
-  margin: 0;
-}
-
-.main-nav-trigger-wrapper {
-  display: none;
-}
-
-.main-header {
-  position: relative;
 }
 
 .header-nav-bar {
@@ -78,6 +68,50 @@ img {
   width: 100%;
   height: 20vh;
   overflow: hidden;
+}
+
+.main-nav {
+  width: -webkit-fit-content;
+  width: fit-content;
+  margin: 0;
+}
+
+.main-nav-link {
+  text-transform: capitalize;
+  margin: 0 5rem 0 0;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #3c2323;
+  transition: all 0.2s ease-out 0s;
+  border-bottom: 4px solid transparent;
+  padding-bottom: 5px;
+}
+.main-nav-link:hover, .main-nav-linkfocus {
+  border-bottom: 4px solid #3c2323;
+  padding-bottom: 0;
+  margin-bottom: 5px;
+  outline: 0;
+}
+@media (max-width: 800px) {
+  .main-nav-link:hover, .main-nav-linkfocus {
+    border-bottom: 3px solid transparent;
+  }
+}
+.main-nav-link:last-of-type {
+  margin: 0;
+}
+
+#main-nav-current {
+  color: #3090cd;
+  pointer-events: none;
+}
+
+.main-nav-trigger-wrapper {
+  display: none;
+}
+
+.main-header {
+  position: relative;
 }
 
 .main-logo-wrapper {
@@ -179,7 +213,7 @@ select {
 }
 .show-on-focus {
   position: absolute;
-  color: #060709;
+  color: #3c2323;
   background-color: #f4f1f0;
   padding: 10px;
   font-size: 4rem;
