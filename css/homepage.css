@@ -1,3 +1,23 @@
+.three-image-flex-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.three-image-block-wrapper {
+  flex: 0 1 auto;
+  width: 30%;
+}
+
+.three-image-image {
+  margin-bottom: 5rem;
+}
+
+.three-image-paragraph {
+  text-align: center;
+}
+
 .text-image-section {
   display: flex;
   flex-direction: row;

@@ -6,6 +6,33 @@
 
 @use 'bits' as *; //Contains variables, media queries mixins etc.
 
+//*=========================================
+//** Three Image Section **
+//*=========================================
+
+.three-image-flex-wrapper {
+  @include flex(row);
+  justify-content: space-between;
+  width: 100%;
+}
+
+.three-image-block-wrapper {
+  flex: 0 1 auto;
+  width: 30%;
+}
+
+.three-image-image {
+  margin-bottom: $paragraph-spacing-medium;
+}
+
+.three-image-paragraph {
+  text-align: center;
+}
+
+//*=========================================
+//** Split Image Text Section **
+//*=========================================
+
 .text-image-section {
   @include flex(row);
   justify-content: flex-start;

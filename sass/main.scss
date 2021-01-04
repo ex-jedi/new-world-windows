@@ -37,21 +37,25 @@ html {
 h1 {
   font-size: $heading-size-extra-large;
   margin: 0 auto $heading-spacing-extra-large;
+  width: fit-content;
 }
 
 h2 {
   font-size: $heading-size-large;
   margin: 0 auto $heading-spacing-large;
+  width: fit-content;
 }
 
 h3 {
   font-size: $heading-size-medium;
   margin: 0 auto $heading-spacing-medium;
+  width: fit-content;
 }
 
 h4 {
   font-size: $heading-size-small;
   margin: 0 auto $heading-spacing-medium;
+  width: fit-content;
 }
 
 //********** Containers **********
