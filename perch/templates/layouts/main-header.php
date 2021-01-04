@@ -49,5 +49,5 @@
 					'hide-extensions' => true,
 			)); ?>
 			</div>
-				<?php perch_content("Header Main Image"); ?>
+				<?php perch_content("Header Main Content"); ?>
 		</header>

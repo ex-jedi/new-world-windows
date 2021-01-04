@@ -56,9 +56,16 @@ img {
 // ** Main Nav  **
 // *=========================================
 
-.main-nav-trigger {
+.main-nav {
+  width: fit-content;
+  margin: 0;
+}
+
+.main-nav-trigger-wrapper {
   display: none;
 }
+
+//********** Responsive Styles **********
 
 //*=========================================
 //** Header **
@@ -70,24 +77,42 @@ img {
 
 .header-nav-bar {
   @include flex(row);
+  justify-content: space-between;
   align-items: center;
-  position: absolute;
-  left: 0;
-  top: 0;
   padding: $paragraph-spacing-small;
-  background-color: $background-colour-main;
+  background-color: $background-colour-light;
   width: 100%;
+  height: 20vh;
+  overflow: hidden;
 }
 
 .main-logo-wrapper {
   width: 100%;
-  max-width: 200px;
+  height: auto;
+  max-width: 150px;
 }
 
-.header-main-image-wrapper {
+.main-logo {
   width: 100%;
-  height: 100vh;
+  height: 100%;
+}
+
+.header-content-wrapper {
+  @include flex(row);
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: 70vh;
+}
+
+.header-text-wrapper,
+.header-main-image-wrapper {
+  flex: 1 0 auto;
+  width: 50%;
+  height: 100%;
   overflow: hidden;
+  margin: 0;
+  background-color: $background-colour-one;
 }
 
 .header-main-image {
@@ -147,7 +172,7 @@ select {
 .show-on-focus {
   position: absolute;
   color: $font-colour-dark;
-  background-color: $background-colour-main;
+  background-color: $background-colour-light;
   padding: 10px;
   font-size: $font-size-main;
   top: 0;

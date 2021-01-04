@@ -19,7 +19,13 @@ img {
   display: block;
 }
 
-.main-nav-trigger {
+.main-nav {
+  width: -webkit-fit-content;
+  width: fit-content;
+  margin: 0;
+}
+
+.main-nav-trigger-wrapper {
   display: none;
 }
 
@@ -30,24 +36,43 @@ img {
 .header-nav-bar {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  position: absolute;
-  left: 0;
-  top: 0;
   padding: 2.5rem;
   background-color: #f4f1f0;
   width: 100%;
+  height: 20vh;
+  overflow: hidden;
 }
 
 .main-logo-wrapper {
   width: 100%;
-  max-width: 200px;
+  height: auto;
+  max-width: 150px;
 }
 
-.header-main-image-wrapper {
+.main-logo {
   width: 100%;
-  height: 100vh;
+  height: 100%;
+}
+
+.header-content-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: 70vh;
+}
+
+.header-text-wrapper,
+.header-main-image-wrapper {
+  flex: 1 0 auto;
+  width: 50%;
+  height: 100%;
   overflow: hidden;
+  margin: 0;
+  background-color: #417bbf;
 }
 
 .header-main-image {
