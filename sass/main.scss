@@ -38,6 +38,18 @@ h1 {
   font-size: $heading-size-extra-large;
 }
 
+h2 {
+  font-size: $heading-size-large;
+}
+
+h3 {
+  font-size: $heading-size-medium;
+}
+
+h4 {
+  font-size: $heading-size-small;
+}
+
 //********** Containers **********
 
 //********** Paragraphs **********
@@ -55,6 +67,19 @@ img {
 }
 
 //********** Links **********
+
+//********** Button **********
+
+.main-site-button {
+  font-size: $font-size-main;
+  font-weight: bold;
+  outline: none;
+  padding: $paragraph-spacing-tiny;
+  border-width: 4px;
+  border-style: solid;
+  position: relative;
+  transition: 0.3s all ease;
+}
 
 // *=========================================
 // ** Main Nav  **
@@ -122,6 +147,28 @@ img {
 .header-text-wrapper {
   padding: $paragraph-spacing-medium;
   color: $font-colour-light;
+}
+
+.header-subheading {
+  font-size: $font-size-main;
+}
+
+.header-button {
+  background-color: $background-colour-one;
+  color: $font-colour-light;
+  border-color: $font-colour-light;
+
+  &:hover {
+    color: $font-colour-blue;
+    background-color: $background-colour-light;
+    box-shadow: 5px 5px 0px 0px #289fed, 10px 10px 0px 0px #5fb8ff,
+      15px 15px 0px 0px #a1d8ff, 20px 20px 0px 0px #cae6ff,
+      25px 25px 0px 0px #e1eeff, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  }
+
+  &:active {
+    box-shadow: none;
+  }
 }
 
 .header-main-image {
