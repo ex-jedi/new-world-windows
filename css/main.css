@@ -14,6 +14,10 @@ html {
   box-sizing: border-box;
 }
 
+h1 {
+  font-size: 7rem;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -73,6 +77,11 @@ img {
   overflow: hidden;
   margin: 0;
   background-color: #417bbf;
+}
+
+.header-text-wrapper {
+  padding: 5rem;
+  color: #f4f1f0;
 }
 
 .header-main-image {
