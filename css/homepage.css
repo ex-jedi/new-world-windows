@@ -1,0 +1,30 @@
+.text-image-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: auto;
+}
+
+.section-image-wrapper,
+.section-text-wrapper {
+  flex: 1 1 auto;
+  width: 50%;
+  height: auto;
+}
+
+.section-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10rem;
+  font-size: 4rem;
+}
+.section-text-wrapper p:last-of-type {
+  margin-bottom: 0;
+}
