@@ -29,18 +29,19 @@ $grid-gap: 0 1rem;
 //********** Font Sizing **********
 
 //* Base Font Size
-$font-size-extra-large: 7rem;
-$font-size-larger: 6rem;
-$font-size-medium: 5rem;
-$font-size-main: 4rem;
-$font-size-small: 3rem;
-$font-size-extra-small: 2rem;
+$font-size-extra-large: 8rem;
+$font-size-larger: 7rem;
+$font-size-large: 5rem;
+$font-size-medium: 4rem;
+$font-size-main: 3rem;
+$font-size-small: 2rem;
+$font-size-extra-small: 1rem;
 $font-size-tiny: 1rem;
 
 //* Headings Size
 $heading-size-extra-large: $font-size-extra-large;
 $heading-size-large: $font-size-larger;
-$heading-size-medium: $font-size-medium;
+$heading-size-medium: $font-size-large;
 $heading-size-small: $font-size-main;
 
 //* Forms
