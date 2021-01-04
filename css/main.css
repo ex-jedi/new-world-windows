@@ -16,18 +16,26 @@ html {
 
 h1 {
   font-size: 7rem;
+  margin: 0 auto 10rem;
 }
 
 h2 {
   font-size: 6rem;
+  margin: 0 auto 8rem;
 }
 
 h3 {
   font-size: 5rem;
+  margin: 0 auto 6rem;
 }
 
 h4 {
   font-size: 4rem;
+  margin: 0 auto 6rem;
+}
+
+p {
+  margin: 0 auto 5rem;
 }
 
 img {
@@ -103,12 +111,21 @@ img {
 }
 
 .header-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
   padding: 5rem;
   color: #f4f1f0;
 }
 
+.main-header-heading {
+  margin: 0;
+}
+
 .header-subheading {
   font-size: 4rem;
+  margin: 0;
 }
 
 .header-button {

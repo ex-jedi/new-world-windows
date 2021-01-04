@@ -36,23 +36,31 @@ html {
 
 h1 {
   font-size: $heading-size-extra-large;
+  margin: 0 auto $heading-spacing-extra-large;
 }
 
 h2 {
   font-size: $heading-size-large;
+  margin: 0 auto $heading-spacing-large;
 }
 
 h3 {
   font-size: $heading-size-medium;
+  margin: 0 auto $heading-spacing-medium;
 }
 
 h4 {
   font-size: $heading-size-small;
+  margin: 0 auto $heading-spacing-medium;
 }
 
 //********** Containers **********
 
 //********** Paragraphs **********
+
+p {
+  margin: 0 auto $paragraph-spacing-medium;
+}
 
 // *=========================================
 // ** Inline **
@@ -145,12 +153,20 @@ img {
 }
 
 .header-text-wrapper {
+  @include flex(column);
+  align-items: flex-start;
+  justify-content: space-around;
   padding: $paragraph-spacing-medium;
   color: $font-colour-light;
 }
 
+.main-header-heading {
+  margin: 0;
+}
+
 .header-subheading {
   font-size: $font-size-main;
+  margin: 0;
 }
 
 .header-button {
