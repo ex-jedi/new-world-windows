@@ -45,3 +45,18 @@
   padding: 10rem;
   font-size: 3rem;
 }
+.parallax-image-section {
+  padding: 0;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.parallax-image-wrapper {
+  height: 100vh;
+}
+
+.parallax-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
