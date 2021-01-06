@@ -8,7 +8,7 @@
   <?php perch_content("Contact Form"); ?>
 </main>
 <?php perch_layout('main-footer'); ?>
-<?php perch_layout('main-footer-end-js'); ?>
+<?php perch_layout('homepage-footer-end-js'); ?>
 <!-- TODO: Remove debug -->
 <!-- <?php PerchUtil::output_debug(); ?> -->
 
