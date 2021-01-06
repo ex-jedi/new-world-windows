@@ -20,14 +20,14 @@ ScrollTrigger.batch('.fade-in-rotate', {
 
 function homepageParallax() {
   gsap.to('.parallax-image', {
-    yPercent: -20,
+    yPercent: -30,
     ease: 'none',
     scrollTrigger: {
       trigger: '.parallax-image-section',
       markers: true,
-      // start: "top bottom", // the default values
-      // end: "bottom top",
-      scrub: true,
+      start: 'top bottom',
+      end: 'bottom',
+      scrub: 0.5,
     },
   });
 }

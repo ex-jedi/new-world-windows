@@ -46,9 +46,9 @@
   font-size: 3rem;
 }
 .parallax-image-section {
+  margin-bottom: 25rem;
   padding: 0;
-  height: 60vh;
-  overflow: hidden;
+  height: 70vh;
 }
 
 .parallax-image-wrapper {
@@ -59,4 +59,8 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+.testimonials-section {
+  height: 100vh;
 }
