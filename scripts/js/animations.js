@@ -20,10 +20,11 @@ ScrollTrigger.batch('.fade-in-rotate', {
 
 function homepageParallax() {
   gsap.to('.parallax-image', {
-    yPercent: -100,
+    yPercent: -20,
     ease: 'none',
     scrollTrigger: {
-      trigger: '.pSection',
+      trigger: '.parallax-image-section',
+      markers: true,
       // start: "top bottom", // the default values
       // end: "bottom top",
       scrub: true,
