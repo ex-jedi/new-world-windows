@@ -82,7 +82,7 @@
 }
 
 //*=========================================
-//** Testimonials SEction  **
+//** Testimonials Section  **
 //*=========================================
 
 //* Flickity v2.2.2
@@ -192,6 +192,12 @@
 
 .flickity-page-dots .dot.is-selected {
   opacity: 1;
+}
+
+//********** Testimonials Styles **********
+
+.testimonials-section {
+  padding-bottom: calc(#{$section-spacing-small} / 2);
 }
 
 .testimonial-wrapper {
