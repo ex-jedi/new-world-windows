@@ -814,6 +814,7 @@ async function displayInstagramFeed() {
 
   const feed = new Instafeed({
     accessToken: instagramToken,
+    limit: 5,
   });
   feed.run();
 }
