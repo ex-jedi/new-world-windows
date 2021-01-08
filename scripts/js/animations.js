@@ -24,7 +24,6 @@ function homepageParallax() {
     ease: 'none',
     scrollTrigger: {
       trigger: '.parallax-image-section',
-      markers: true,
       start: 'top bottom',
       end: 'bottom',
       scrub: 0.5,

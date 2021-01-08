@@ -28,4 +28,6 @@ const flkty = new Flickity(carousel, {
   imagesLoaded: true,
   autoPlay: 5000,
   prevNextButtons: false,
+  adaptiveHeight: true,
+  wrapAround: true,
 });
