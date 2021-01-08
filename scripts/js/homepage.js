@@ -26,7 +26,6 @@ displayInstagramFeed();
 const carousel = document.querySelector('.main-carousel');
 const flkty = new Flickity(carousel, {
   imagesLoaded: true,
-  percentPosition: false,
-  autoPlay: true,
-  pageDots: true,
+  autoPlay: 5000,
+  prevNextButtons: false,
 });

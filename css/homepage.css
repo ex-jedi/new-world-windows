@@ -201,8 +201,12 @@ https://flickity.metafizzy.co
   opacity: 1;
 }
 
-.carousel-cell {
+.testimonial-wrapper {
   width: 100%;
+}
+
+.testimonial-text-wrapper {
+  margin: 0;
 }
 
 #instafeed {
