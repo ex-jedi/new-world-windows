@@ -248,6 +248,102 @@ body {
 // ** Forms  **
 // *=========================================
 
+.general-contact-form-section {
+  margin: $section-spacing-large $section-spacing-large;
+  color: $font-colour-dark;
+}
+
+.contact-form-intro-text {
+  font-size: $font-size-large;
+  margin: 0 0 $section-spacing-medium;
+}
+
+.general-contact-form-wrapper {
+  @include flex(column);
+  justify-content: center;
+}
+
+.general-contact-form-input-wrapper {
+  @include flex(row);
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: $section-spacing-small;
+
+  @include breakpoint(700) {
+    @include flex(column);
+    align-items: flex-start;
+  }
+}
+
+.general-contact-form-label {
+  width: $section-spacing-large;
+  flex: 0 1 auto;
+  font-weight: 700;
+  vertical-align: bottom;
+  line-height: 0.7;
+
+  @include breakpoint(700) {
+    line-height: normal;
+    margin-bottom: $paragraph-spacing-medium;
+  }
+}
+
+.text-area-label {
+  align-self: flex-start;
+}
+
+.general-contact-form-input {
+  flex: 1 1 auto;
+  border: 0;
+  padding-bottom: 5px;
+
+  @include breakpoint(700) {
+    width: 100%;
+  }
+
+  &:focus,
+  &:active {
+    border-bottom: 1px solid $font-colour-dark;
+  }
+}
+
+.text-area-input {
+  border-bottom: 0;
+  line-height: 1.85rem;
+  background-attachment: local;
+  resize: none;
+
+  @include styled-scrollbar(
+    0.25rem,
+    $background-colour-one,
+    $background-colour-light,
+    $background-colour-light
+  );
+
+  // background-image: linear-gradient(
+  //     to right,
+  //     $main-background-colour 0,
+  //     transparent 0
+  //   ),
+  //   linear-gradient(to left, $main-background-colour 0, transparent 0),
+  //   repeating-linear-gradient(
+  //     $main-background-colour,
+  //     $main-background-colour 1.8rem,
+  //     $dark-font-colour 1.8rem,
+  //     $dark-font-colour 1.85rem,
+  //     $main-background-colour 1.85rem
+  //   );
+
+  &:focus {
+    border-bottom: 0;
+  }
+}
+
+.contact-consent-link {
+  color: $font-colour-dark;
+  text-decoration: underline;
+}
+
 //* Inherit fonts for inputs and buttons
 input,
 button,
@@ -256,13 +352,99 @@ select {
   font: inherit;
 }
 
+//********** Checkbox **********
+.checkbox-div {
+  @include flex(row);
+  margin-bottom: $section-spacing-small;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  input {
+    position: relative;
+    width: fit-content;
+    font-size: 0;
+    top: 0.5rem;
+
+    @include breakpoint(400) {
+      top: 0.3rem;
+    }
+
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 0.9rem;
+      height: 0.9rem;
+      margin-top: -3px;
+      margin-left: -4px;
+      border: 1px solid $background-colour-one;
+      border-radius: 0.25em;
+      background: $background-colour-light;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      height: 7px;
+      width: 16px;
+      color: $font-colour-dark;
+      border-left: 2px solid;
+      border-bottom: 2px solid;
+      top: 0px;
+      left: -2px;
+      transform: rotate(-25deg) scale(0.75);
+      opacity: 0;
+      transition: all $timing-duration-medium cubic-bezier(0.18, 1.96, 1, 1.96);
+    }
+
+    &:checked:after {
+      opacity: 1;
+      transform: rotate(-45deg) scale(1);
+    }
+  }
+
+  label {
+    text-transform: none;
+    display: inline-block;
+    font-weight: bold;
+    width: 90%;
+  }
+}
+
+.submit-wrapper {
+  margin-bottom: 0;
+}
+
+.submit {
+  margin: 0 auto;
+  border: 1px solid $background-colour-one;
+  background-color: $background-colour-light;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 0;
+  transition: all ease $timing-duration-medium;
+
+  &:hover {
+    background-color: $background-colour-one;
+    color: $font-colour-light;
+  }
+}
+
+.success {
+  font-size: $font-size-medium;
+  text-align: center;
+}
+
 //********** Honeypot **********
 
 .form-identification-number {
-  overflow: hidden;
-  position: absolute;
-  z-index: -10;
   opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  z-index: -1;
 }
 
 // *=========================================
