@@ -6,6 +6,7 @@
   <?php perch_content("Parallax Image"); ?>
   <?php perch_content("Testimonials"); ?>
   <?php perch_content("Contact Form"); ?>
+  <?php perch_content("Instagram Section"); ?>
 </main>
 <?php perch_layout('main-footer'); ?>
 <?php perch_layout('homepage-footer-end-js'); ?>
