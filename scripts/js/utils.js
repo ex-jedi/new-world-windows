@@ -815,6 +815,12 @@ async function displayInstagramFeed() {
   const feed = new Instafeed({
     accessToken: instagramToken,
     limit: 5,
+    template: `
+    <div class="instagram-image-wrapper">
+      <a href="{{link}}">
+        <img class="instagram-image" title="{{caption}}" src="{{image}}">
+      </a>
+    </div> `,
   });
   feed.run();
 }
