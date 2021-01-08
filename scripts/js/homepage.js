@@ -3,8 +3,7 @@
 // *==============================================================================
 
 import { homepageParallax } from './animations';
-import { Instafeed } from './utils';
-import { displayInstagramFeed } from './lib';
+import { displayInstagramFeed } from './utils';
 // *==============================================================================
 // ** Page JS  **
 // *==============================================================================
