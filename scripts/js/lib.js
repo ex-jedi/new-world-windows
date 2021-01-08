@@ -164,13 +164,28 @@ function scrollColourChange() {
 // ** Homepage  **
 // *==============================================================================
 
-
 // *=========================================
 // ** Exports  **
 // *=========================================
 
-export {
-  menuOpenerHandler,
-  mainNavTrigger,
-  scrollColourChange
-};
+export { menuOpenerHandler, mainNavTrigger, scrollColourChange };
+// *=========================================
+// ** Instagram Feed  **
+// *=========================================
+
+async function displayInstagramFeed() {
+  // * Instagram Token Api
+  const instagramTokenEndpoint =
+    'https://ig.instant-tokens.com/users/86e98f2a-84d4-4e76-80d7-af04a32bbc58/instagram/17841409175872284/token?userSecret=6juhjin5kxx50urz3f6aj';
+
+  const response = await fetch(instagramTokenEndpoint);
+  const data = await response.json();
+  const instagramToken = data.Token;
+
+  const feed = new Instafeed({
+    accessToken: instagramToken,
+  });
+  feed.run();
+}
+
+export { displayInstagramFeed };

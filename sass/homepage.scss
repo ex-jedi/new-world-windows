@@ -88,3 +88,11 @@
 .testimonials-section {
   height: 100vh;
 }
+
+//*=========================================
+//** Instafeed **
+//*=========================================
+
+#instafeed {
+  @include flex(row);
+}

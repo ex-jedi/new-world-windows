@@ -3,8 +3,7 @@
 // *==============================================================================
 
 import { homepageParallax } from './animations';
-import { Instafeed } from './utils';
-import { displayInstagramFeed } from './lib';
+import { Instafeed, getInstagramToken, token } from './utils';
 // *==============================================================================
 // ** Page JS  **
 // *==============================================================================
@@ -16,7 +15,8 @@ import { displayInstagramFeed } from './lib';
 // ********** Homepage Parallax **********
 
 homepageParallax();
-
-// ********** Instagram Feed **********
+// ********** Instafeed **********
 
 displayInstagramFeed();
+
+//# sourceMappingURL=.prepros_homepage-min.js.map

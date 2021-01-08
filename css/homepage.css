@@ -64,3 +64,8 @@
 .testimonials-section {
   height: 100vh;
 }
+
+#instafeed {
+  display: flex;
+  flex-direction: row;
+}
