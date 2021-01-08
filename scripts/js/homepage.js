@@ -2,6 +2,7 @@
 // ** Imports  **
 // *==============================================================================
 
+import { flickity } from 'flickity';
 import { homepageParallax } from './animations';
 import { displayInstagramFeed } from './utils';
 // *==============================================================================
