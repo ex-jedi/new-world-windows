@@ -30,11 +30,14 @@
       </span>
 
     <span class="footer-address-span footer-address-email" itemprop="email">
-      <perch:content id="addressEmail" type="text" label="Email Address" required>
+      <a href="mailto:<perch:content id="addressEmail" type="text" label="Email Address" required>">
+        <perch:content id="addressEmail">
+      </a>
    </span>
 
     <span class="footer-address-span footer-address-phone" itemprop="telephone">
-      <perch:content id="addressTelephone" type="text" label="Telephone Number" required>
+      <a class="footer-telephone-link" href="tel:<perch:content id="addressTelephone" type="text" label="Telephone Number" required>">
+        <perch:content id="addressTelephone">
+      </a>
     </span>
-
 </div>

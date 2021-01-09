@@ -459,10 +459,62 @@ select {
 
 .main-footer {
   @include flex(row);
-
   background-color: $background-colour-one;
   padding: $section-spacing-extra-small;
   overflow: hidden;
+  color: $font-colour-light;
+
+  a {
+    color: $font-colour-light;
+  }
+}
+
+.footer-contact-div,
+.footer-social-wrapper,
+.footer-legals {
+  flex: 1 0 auto;
+  width: 30%;
+}
+
+.footer-contact-div {
+  @include flex(column);
+  align-items: center;
+
+  span {
+    margin-bottom: $paragraph-spacing-tiny;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+.footer-social-wrapper {
+  @include flex(row);
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.footer-social-media-link {
+  width: 75px;
+  height: 75px;
+
+  &:first-of-type {
+    margin-right: $paragraph-spacing-large;
+  }
+}
+
+.footer-legals {
+  @include flex(column);
+  align-items: center;
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+.footer-credit {
+  text-align: center;
 }
 
 //*=========================================
