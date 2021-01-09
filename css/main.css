@@ -299,14 +299,14 @@ select {
   width: -webkit-fit-content;
   width: fit-content;
   font-size: 0;
-  top: 1rem;
+  top: 2px;
   display: inline;
 }
 .checkbox-div input:before {
   content: "";
   display: inline-block;
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
   border: 1px solid #3090cd;
   border-radius: 0.25em;
   background: #f4f1f0;
@@ -314,12 +314,12 @@ select {
 .checkbox-div input:after {
   content: "";
   position: absolute;
-  height: 9px;
-  width: 19px;
+  height: 12px;
+  width: 29px;
   color: #3c2323;
-  border-left: 4px solid;
-  border-bottom: 4px solid;
-  top: 3px;
+  border-left: 5px solid;
+  border-bottom: 5px solid;
+  top: 5px;
   left: 0;
   transform: rotate(-25deg) scale(0.75);
   opacity: 0;
