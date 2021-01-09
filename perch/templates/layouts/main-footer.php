@@ -9,7 +9,7 @@
 				<a href="/terms">Terms of use</a>
 			</p>
 			<p class="footer-copyright" >
-				&copy; <?php echo date("Y"); ?> <span itemprop="name">XXXX XXXX
+				&copy; <?php echo date("Y"); ?> <span itemprop="name">New World Windows
 			</p>
 			<p class="footer-credit">
 				Web design & development, brand design & illustration by <a href="" class="promo-link">phoenix & phoenix</a>
@@ -18,3 +18,4 @@
 </footer>
 </div> <!-- wrapper div -->
 <!-- end js files  -->
+<!-- TODO: Check telephone works -->
