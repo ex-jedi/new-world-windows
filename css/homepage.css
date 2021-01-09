@@ -162,7 +162,7 @@
 }
 
 .testimonials-section {
-  padding-bottom: calc(20rem / 2);
+  padding-bottom: calc(20rem / 2 + 25px);
 }
 
 .testimonial-wrapper {

@@ -252,7 +252,7 @@ body {
   color: $font-colour-dark;
   background-color: $background-colour-one;
   color: $font-colour-light;
-  padding-top: calc(#{$section-spacing-small} / 2);
+  padding: $section-spacing-extra-small $section-spacing-medium;
 }
 
 .general-contact-form-wrapper {
@@ -263,7 +263,8 @@ body {
 .general-contact-form-input-wrapper {
   @include flex(row);
   justify-content: flex-end;
-  align-items: flex-end;
+  align-items: flex-start;
+  font-size: $font-size-main;
   margin-bottom: $section-spacing-small;
 }
 
@@ -286,8 +287,9 @@ body {
 
 .general-contact-form-input {
   flex: 1 1 auto;
-  border: 0;
-  padding-bottom: 5px;
+  border: 3px solid transparent;
+  padding: 1rem;
+  transition: $transition-two;
 
   @include breakpoint(700) {
     width: 100%;
@@ -295,7 +297,7 @@ body {
 
   &:focus,
   &:active {
-    border-bottom: 1px solid $font-colour-dark;
+    border: 3px solid $accent-colour-one;
   }
 }
 
