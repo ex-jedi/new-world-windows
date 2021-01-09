@@ -238,36 +238,3 @@
   @include link-underline($font-colour-blue);
   color: $font-colour-blue;
 }
-
-//*=========================================
-//** Instafeed **
-//*=========================================
-
-#instafeed {
-  @include flex(row);
-}
-
-.instagram-heading-link {
-  @include link-underline($background-colour-one);
-  color: $font-colour-blue;
-}
-
-.instagram-image-wrapper {
-  height: 500px;
-  width: 500px;
-  margin: 0 0.5rem;
-
-  &:first-of-type {
-    margin-left: 0;
-  }
-
-  &:last-of-type {
-    margin-right: 0;
-  }
-}
-
-.instagram-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}

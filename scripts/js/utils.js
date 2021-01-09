@@ -806,7 +806,7 @@ Instafeed.prototype._runHook = function runHook(hookName, data) {
 async function displayInstagramFeed() {
   // * Instagram Token Api
   const instagramTokenEndpoint =
-    'https://ig.instant-tokens.com/users/86e98f2a-84d4-4e76-80d7-af04a32bbc58/instagram/17841409175872284/token?userSecret=6juhjin5kxx50urz3f6aj';
+    'https://ig.instant-tokens.com/users/86e98f2a-84d4-4e76-80d7-af04a32bbc58/instagram/17841408526477388/token?userSecret=l7y9v65l95vmkful05c7b';
 
   const response = await fetch(instagramTokenEndpoint);
   const data = await response.json();
