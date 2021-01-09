@@ -124,7 +124,7 @@ a {
 }
 
 #main-nav-current {
-  color: #3090cd;
+  color: #3f80c2;
   pointer-events: none;
 }
 
@@ -164,7 +164,7 @@ a {
   height: 100%;
   overflow: hidden;
   margin: 0;
-  background-color: #3090cd;
+  background-color: #3f80c2;
 }
 
 .header-text-wrapper {
@@ -187,12 +187,12 @@ a {
 }
 
 .header-button {
-  background-color: #3090cd;
+  background-color: #3f80c2;
   color: #f4f1f0;
   border-color: #f4f1f0;
 }
 .header-button:hover {
-  color: #3090cd;
+  color: #3f80c2;
   background-color: #f4f1f0;
   box-shadow: 5px 5px 0px 0px #289fed, 10px 10px 0px 0px #5fb8ff, 15px 15px 0px 0px #a1d8ff, 20px 20px 0px 0px #cae6ff, 25px 25px 0px 0px #e1eeff, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
@@ -215,7 +215,7 @@ body {
 
 .general-contact-form-section {
   color: #3c2323;
-  background-color: #3090cd;
+  background-color: #3f80c2;
   color: #f4f1f0;
   padding: 10rem 25rem;
 }
@@ -307,7 +307,7 @@ select {
   display: inline-block;
   width: 3rem;
   height: 3rem;
-  border: 1px solid #3090cd;
+  border: 1px solid #3f80c2;
   border-radius: 0.25em;
   background: #f4f1f0;
 }
@@ -344,7 +344,7 @@ select {
 .submit {
   margin: 0 auto;
   border: 4px solid #f4f1f0;
-  background-color: #3090cd;
+  background-color: #3f80c2;
   padding: 1rem 2.5rem;
   color: #f4f1f0;
   text-transform: uppercase;
@@ -386,10 +386,10 @@ select {
   transition: all 0.2s ease-out 0s;
   border-bottom: 4px solid transparent;
   padding-bottom: 5px;
-  color: #3090cd;
+  color: #3f80c2;
 }
 .instagram-heading-link:hover, .instagram-heading-linkfocus {
-  border-bottom: 4px solid #3090cd;
+  border-bottom: 4px solid #3f80c2;
   padding-bottom: 0;
   margin-bottom: 5px;
   outline: 0;
@@ -421,7 +421,7 @@ select {
 .main-footer {
   display: flex;
   flex-direction: row;
-  background-color: #3090cd;
+  background-color: #3f80c2;
   padding: 10rem;
   overflow: hidden;
   color: #f4f1f0;
