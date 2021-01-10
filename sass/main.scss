@@ -434,6 +434,7 @@ select {
 
 #instafeed {
   @include flex(row);
+  flex-wrap: wrap;
 }
 
 .instagram-heading-link {
@@ -442,9 +443,10 @@ select {
 }
 
 .instagram-image-wrapper {
-  height: 400px;
-  width: 400px;
-  margin: 0 0.5rem;
+  flex: 1 1 auto;
+  height: 200px;
+  width: 200px;
+  margin: 0.5rem;
 
   &:first-of-type {
     margin-left: 0;
