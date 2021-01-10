@@ -28,6 +28,14 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  margin: 0 auto;
+  background-color: $background-colour-light;
+  position: relative;
+  min-width: 320px;
+  max-width: 1920px;
+}
+
 // *=========================================
 // ** Content container and block **
 // *=========================================
