@@ -1,0 +1,21 @@
+<section class="services-section full-width-repeater-section">
+  <perch:repeater id="fullWidthContent" label="Content Block">
+    <div class="full-width-repeater-wrapper">
+      <h2 class="section-heading" itemprop="serviceType">
+        <perch:content id="repearterSectionHeading" type="text" label="Block Heading" required>
+      </h2>
+      <img class="full-width-repeater-image" itemprop="image" src="<perch:content id="fullWidthRepeaterImage" type="image" width="2000" label="Image" help="Image should be at least 2000px wide and preferably landscape orientation" quality="70">" alt="<perch:content id="alt" type="text" label="Image description">"
+      sizes="100vw"
+      srcset="<perch:content type="image" id="fullWidthRepeaterImage" width="2000" > 2000w,
+      <perch:content type="image" id="fullWidthRepeaterImage" width="1500" quality="70"> 1500w,
+      <perch:content type="image" id="fullWidthRepeaterImage" width="1200" quality="70"> 1200w,
+      <perch:content type="image" id="fullWidthRepeaterImage" width="800" quality="70"> 800w,
+      <perch:content type="image" id="fullWidthRepeaterImage" width="600" quality="70"> 600w">
+
+      <div class="full-width-repeater-text-wrapper" itemprop="makesOffer">
+        <perch:content id="repeaterTextWrapper" type="textarea" editor="redactor" label="Text Content" required html>
+      </div>
+    </div>
+  </perch:repeater>
+
+</section>
