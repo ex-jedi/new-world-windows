@@ -6,6 +6,10 @@
 
 @use 'bits' as *; //Contains variables, media queries mixins etc.
 
+//*=========================================
+//** Intro **
+//*=========================================
+
 .about-us-section {
   padding: 0 $section-spacing-large $section-spacing-small;
 }
@@ -17,4 +21,58 @@
 
 .full-width-repeater-wrapper {
   margin-bottom: $section-spacing-small;
+}
+
+.about-us-intro-wrapper {
+  p {
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+//*=========================================
+//** Team Bio **
+//*=========================================
+
+.testimonials-section {
+  padding-bottom: calc(#{$section-spacing-extra-small} + 25px);
+}
+
+.bio-wrapper {
+  margin-bottom: $section-spacing-extra-small;
+}
+
+.bio-flex-wrapper {
+  @include flex(row);
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bio-image-wrapper {
+  flex: 1 1 auto;
+  width: 30%;
+  margin-right: $paragraph-spacing-medium;
+}
+
+.bio-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bio-text-wrapper {
+  flex: 1 1 auto;
+  width: 70%;
+  margin: 0;
+}
+
+.bio-name {
+  margin-bottom: $paragraph-spacing-small;
+}
+
+.bio-paragraph {
+  font-style: italic;
+  margin: 0;
 }
