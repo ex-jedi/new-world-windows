@@ -5,3 +5,16 @@
 //********** Imports **********
 
 @use 'bits' as *; //Contains variables, media queries mixins etc.
+
+.about-us-section {
+  padding: 0 $section-spacing-large $section-spacing-small;
+}
+
+.full-width-image {
+  max-height: 90vh;
+  margin: 0 auto $paragraph-spacing-large;
+}
+
+.full-width-repeater-wrapper {
+  margin-bottom: $section-spacing-small;
+}
