@@ -19,6 +19,7 @@ html {
   -webkit-tap-highlight-color: transparent;
   font-size: 10px;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 // * Box sizing rules
@@ -220,7 +221,15 @@ a {
   margin: 0;
 }
 
-.header-button {
+.header-link {
+  font-size: $font-size-medium;
+  font-weight: bold;
+  outline: none;
+  padding: $paragraph-spacing-tiny;
+  border-width: 4px;
+  border-style: solid;
+  position: relative;
+  transition: 0.3s all ease;
   background-color: $background-colour-one;
   color: $font-colour-light;
   border-color: $font-colour-light;
@@ -276,6 +285,10 @@ body {
   margin-bottom: $section-spacing-small;
 }
 
+.contact-form-subheading {
+  font-weight: normal;
+}
+
 .general-contact-form-label {
   width: $section-spacing-large;
   flex: 0 1 auto;
@@ -327,6 +340,10 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+.required-marker {
+  color: $accent-colour-one;
 }
 
 //********** Checkbox **********

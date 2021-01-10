@@ -6,6 +6,7 @@ html {
   -webkit-tap-highlight-color: transparent;
   font-size: 10px;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -194,17 +195,25 @@ a {
   margin: 0;
 }
 
-.header-button {
+.header-link {
+  font-size: 4rem;
+  font-weight: bold;
+  outline: none;
+  padding: 1rem;
+  border-width: 4px;
+  border-style: solid;
+  position: relative;
+  transition: 0.3s all ease;
   background-color: #3f80c2;
   color: #f4f1f0;
   border-color: #f4f1f0;
 }
-.header-button:hover {
+.header-link:hover {
   color: #3f80c2;
   background-color: #f4f1f0;
   box-shadow: 5px 5px 0px 0px #289fed, 10px 10px 0px 0px #5fb8ff, 15px 15px 0px 0px #a1d8ff, 20px 20px 0px 0px #cae6ff, 25px 25px 0px 0px #e1eeff, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
-.header-button:active {
+.header-link:active {
   box-shadow: none;
 }
 
@@ -241,6 +250,10 @@ body {
   align-items: flex-start;
   font-size: 3rem;
   margin-bottom: 20rem;
+}
+
+.contact-form-subheading {
+  font-weight: normal;
 }
 
 .general-contact-form-label {
@@ -293,6 +306,10 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+.required-marker {
+  color: #cc8a2f;
 }
 
 .checkbox-div {
