@@ -3,6 +3,7 @@
 // *==============================================================================
 
 import * as Flickity from 'flickity';
+import 'flickity-imagesloaded';
 import { homepageParallax } from './animations';
 import { displayInstagramFeed } from './utils';
 
