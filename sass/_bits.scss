@@ -21,31 +21,39 @@ $grid-gap: 0 1rem;
 
 //* Font Stacks
 @mixin main-font-stack {
-  font-family: 'futura-pt', sans-serif;
-  font-weight: 700;
+  font-family: 'ff-dagny-web-pro', sans-serif;
+  font-weight: 400;
   font-style: normal;
 }
 
-//********** Sizing & spacing **********
+//********** Font Sizing **********
 
-//* Header
-$header-spacing: 5rem;
-$header-spacing-large: 10rem;
+//* Base Font Size
+$font-size-extra-large: 8rem;
+$font-size-larger: 7rem;
+$font-size-large: 5rem;
+$font-size-medium: 4rem;
+$font-size-main: 3rem;
+$font-size-small: 2rem;
+$font-size-extra-small: 1rem;
+$font-size-tiny: 1rem;
 
-//* Headings
+//* Headings Size
+$heading-size-extra-large: $font-size-extra-large;
+$heading-size-large: $font-size-larger;
+$heading-size-medium: $font-size-large;
+$heading-size-small: $font-size-main;
 
-//Sizing
-$h1-size: 8rem;
-$h1-size-medium: 6rem;
-$h1-size-small: 5rem;
-$h2-size: 8rem;
-$h3-size: 1rem;
+//* Forms
+$input-font-size: $font-size-small;
 
-//Spacing
-$h1-spacing-large: 5rem;
-$h1-spacing: 20rem;
-$h2-spacing: 20rem;
-$h3-spacing: 1rem;
+//********** Spacing **********
+
+//* Header Spacing
+$heading-spacing-extra-large: 10rem;
+$heading-spacing-large: 10rem;
+$heading-spacing-medium: 8rem;
+$heading-spacing-small: 6rem;
 
 //* Sections
 $section-spacing-extra-large: 40rem;
@@ -58,27 +66,14 @@ $section-spacing-extra-small: 10rem;
 
 //* Paragraphs
 
-//Font sizing
-$font-size-large: 7rem;
-$font-size-larger: 6rem;
-$font-size-medium: 5rem;
-$font-size-main: 4rem;
-$font-size-small: 3rem;
-$font-size-extra-small: 2rem;
-$font-size-tiny: 1rem;
-
 //Spacing
 $paragraph-spacing-large: 10rem;
 $paragraph-spacing-medium: 5rem;
 $paragraph-spacing-small: 2.5rem;
 $paragraph-spacing-smaller: 2rem;
+$paragraph-spacing-tiny: 1rem;
 
 //* Forms
-
-//Sizing
-$input-font-size: $font-size-small;
-
-//Spacing
 $input-spacing: 1rem;
 
 //*=========================================
@@ -88,16 +83,19 @@ $input-spacing: 1rem;
 //TODO: Customise brand colours
 
 //Main brand Colours
-$background-colour-main: #f4f1f0;
-$background-colour-two: #6c9184;
-$background-colour-three: #756c91;
+
+$blue: #3f80c2;
+$green: #addac6;
+$accent-colour-one: #cc8a2f;
+
+$background-colour-light: #f4f1f0;
+$background-colour-one: $blue;
+$background-colour-two: $green;
 
 //Main Font Colours
-$font-colour-main: #756c91;
-$font-colour-two: #6c9184;
-$font-colour-three: #91736c;
-$font-colour-four: #918f73;
 $font-colour-light: #f4f1f0;
+$font-colour-dark: #3c2323;
+$font-colour-blue: $blue;
 
 $link-colour: #3c3cf6;
 $link-visited: #8608fb;
@@ -159,6 +157,27 @@ $transition-two-cubic: $timing-duration-slow $cubic-one 0s;
 }
 
 //********** Keyframes **********
+
+//********** Link Mixin **********
+
+//* Fancy Link Underline
+@mixin link-underline($colour) {
+  transition: all $transition-two;
+  border-bottom: 4px solid transparent;
+  padding-bottom: 5px;
+
+  &:hover,
+  &focus {
+    border-bottom: 4px solid $colour;
+    padding-bottom: 0;
+    margin-bottom: 5px;
+    outline: 0;
+
+    @include breakpoint(800) {
+      border-bottom: 3px solid transparent;
+    }
+  }
+}
 
 //*=========================================
 //** Media Queries   **

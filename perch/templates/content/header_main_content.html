@@ -1,0 +1,23 @@
+<div class="header-content-wrapper">
+  <div class="header-text-wrapper">
+    <h1 class="main-header-heading">
+      <perch:content id="mainHeaderHeading" type="text" label="Main Header Heading" size="l" help="Keep heading very brief" count="words" order="1" required>
+    </h1>
+    <h2 class="header-subheading">
+      <perch:content id="headerSubheading" type="text" label="Header Subheading" help="Keep subheading brief" count="words" size="l" order="4" required>
+    </h2>
+    <a class="header-link" href="#contact-me">
+      <perch:content id="headerButton" type="text" label="Button Text" order="5" required>
+    </a>
+  </div>
+
+  <div class="header-main-image-wrapper">
+    <img class="header-main-image" itemprop="image" src="<perch:content id="headerMainImage" type="image" width="2000" label="Header Main Image" order="2" quality="70">" alt="<perch:content id="alt" type="text" order="3" label="Image description">"
+    sizes="100vw"
+    srcset="<perch:content type="image" id="headerMainImage" width="2000" > 2000w,
+    <perch:content type="image" id="headerMainImage" width="1500" quality="70"> 1500w,
+    <perch:content type="image" id="headerMainImage" width="1100" quality="70"> 1100w,
+    <perch:content type="image" id="headerMainImage" width="900" quality="70"> 900w,
+    <perch:content type="image" id="headerMainImage" width="700" quality="70"> 700w" >
+  </div>
+</div>

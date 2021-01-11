@@ -1,0 +1,30 @@
+<section class="about-us-section bio-section">
+  <h2 class="section-heading">
+    <perch:content id="bioHeading" type="text" label="Team Bio Heading" required>
+  </h2>
+  <perch:repeater id="teamBios" label="Team Bio">
+    <div class="bio-wrapper">
+      <h3 class="bio-name">
+        <perch:content id="bioName" type="text" label="Bio Name" order="3" required>
+      </h3>
+      <div class="bio-flex-wrapper">
+        <div class="bio-image-wrapper">
+           <img class="bio-image" itemprop="image" loading="lazy" src="<perch:content id="bioImage" type="image" width="1200" height="1200" label="Team Bio Image" help="Images should be at least 1200px by 1200px" quality="70" order="1" crop>" alt="<perch:content id="alt" type="text" order="2" label="Image description">"
+           sizes="30vw"
+           srcset="<perch:content type="image" id="bioImage" width="1200" height="1200" crop> 1200w,
+           <perch:content type="image" id="bioImage" width="900" height="900" quality="70" crop> 900w,
+           <perch:content type="image" id="bioImage" width="700" height="700" quality="70" crop> 700w,
+           <perch:content type="image" id="bioImage" width="600" height="600" quality="70" crop> 600w,
+           <perch:content type="image" id="bioImage" width="500" height="500" quality="70" crop> 500w" >
+         </div>
+       </perch:if>
+       <div class="bio-text-wrapper">
+         <p class="bio-paragraph">
+           <perch:content id="bioText" type="textarea" label="Bio Text" order="4">
+         </p>
+       </div>
+      </div>
+    </div>
+  </perch:repeater>
+
+</section>

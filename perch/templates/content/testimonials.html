@@ -1,0 +1,41 @@
+<section class="homepage-section testimonials-section">
+  <h2 class="section-heading testimonials-heading">
+    <perch:content id="homepageTestimonialsHeading" type="text" label="Heading" required>
+  </h2>
+  <div class="main-carousel">
+ <perch:repeater id="testimonialsSlider" label="Testimonials Section">
+
+   <div class="testimonial-wrapper">
+     <perch:if exists="testimonialImage">
+       <div class="testimonial-image-wrapper">
+         <img class="testimonial-image" itemprop="image" src="<perch:content id="testimonialImage" type="image" width="1200" height="1200" label="Optional Testimonial Image" help="Images should be at least 1200px by 1200px" quality="70" order="1" crop>" alt="<perch:content id="alt" type="text" order="2" label="Image description">"
+         sizes="30vw"
+         srcset="<perch:content type="image" id="testimonialImage" width="1200" height="1200" crop> 1200w,
+         <perch:content type="image" id="testimonialImage" width="900" height="900" quality="70" crop> 900w,
+         <perch:content type="image" id="testimonialImage" width="700" height="700" quality="70" crop> 700w,
+         <perch:content type="image" id="testimonialImage" width="600" height="600" quality="70" crop> 600w,
+         <perch:content type="image" id="testimonialImage" width="500" height="500" quality="70" crop> 500w" >
+       </div>
+     </perch:if>
+     <blockquote class="testimonial-text-wrapper">
+       <p class="testimonial-paragraph">
+         "<perch:content id="testemonialText" type="textarea" size="s" label="Testimonial Text" order="3">"
+       </p>
+       <perch:if exists="testimonialLink">
+        <p class="testimonial-name">
+          <a href="<perch:content id="testimonialLink" type="text" label="Optional Testimonial Link" order="5">" class="testimonial-link">
+            <perch:content id="testimonialLinktext" type="text" label="Testimonial Name" order="4">
+          </a>
+        </p>
+        <perch:else>
+        <p class="testimonial-name">
+           <perch:content id="testimonialLinktext">
+        </p>
+       </perch:if>
+
+     </blockquote>
+   </div>
+ </perch:repeater>
+
+  </div>
+</section>

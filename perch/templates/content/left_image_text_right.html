@@ -1,0 +1,19 @@
+<section class="homepage-section text-image-section left-image-section">
+  <div class="section-image-wrapper left-image-wrapper">
+    <img class="section-image left-image" itemprop="image" loading="lazy" src="<perch:content id="homeSecOneImg" type="image" width="1500" label="Image" quality="70">" alt="<perch:content id="alt" type="text" label="Image description">"
+    sizes="50vw"
+    srcset="<perch:content type="image" id="homeSecOneImg" width="1500" > 1500w,
+    <perch:content type="image" id="homeSecOneImg" width="1200" quality="70"> 1200w,
+    <perch:content type="image" id="homeSecOneImg" width="900" quality="70"> 900w,
+    <perch:content type="image" id="homeSecOneImg" width="700" quality="70"> 700w,
+    <perch:content type="image" id="homeSecOneImg" width="500" quality="70"> 500w" >
+  </div>
+  <div class="section-text-wrapper right-text-wrapper">
+    <h2 class="section-heading homepage-section-heading">
+      <perch:content id="secOneHeading" type="text" label="Section Heading" size="m" help="Keep headings brief" count="words" required >
+    </h2>
+    <div class="section-text-area-wrapper">
+      <perch:content id="sectionTextArea" type="textarea" editor="redactor" label="Section Text" help="Keep this section very brief" count="words" required html>
+    </div>
+  </div>
+</section>
