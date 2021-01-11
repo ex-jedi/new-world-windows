@@ -26,7 +26,7 @@ displayInstagramFeed();
 const carousel = document.querySelector('.main-carousel');
 const flkty = new Flickity(carousel, {
   imagesLoaded: true,
-  autoPlay: 10000,
+  autoPlay: 2000,
   prevNextButtons: false,
   wrapAround: true,
   selectedAttraction: 0.006,
