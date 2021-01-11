@@ -600,6 +600,11 @@ body:not(.user-is-tabbing) textarea:focus {
   }
 }
 
+//********** Cookie Warning **********
+.cookie-warning-wrapper {
+  display: none;
+}
+
 //*=========================================
 //** Browser Specific Styles  **
 //*=========================================
