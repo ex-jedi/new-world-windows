@@ -92,7 +92,7 @@ a {
 .header-nav-bar {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   padding: 2.5rem;
   background-color: #f4f1f0;
@@ -105,6 +105,7 @@ a {
   width: -webkit-fit-content;
   width: fit-content;
   margin: 0;
+  margin-left: auto;
 }
 
 .main-nav-link {
@@ -139,6 +140,12 @@ a {
 
 .main-nav-trigger-wrapper {
   display: none;
+}
+
+.header-phone-contact-link {
+  font-size: 4rem;
+  color: #3f80c2;
+  margin-left: 5rem;
 }
 
 .main-header {

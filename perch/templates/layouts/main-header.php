@@ -45,6 +45,7 @@
 			<a class="show-on-focus"  href="#main-content">Skip to main content</a>
 			<div class="header-nav-bar">
 				<?php perch_content("Main Logo"); ?>
+				<?php perch_content("Header Phone Number"); ?>
 			<?php perch_pages_navigation(array(
 					'hide-extensions' => true,
 			)); ?>

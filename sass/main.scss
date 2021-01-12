@@ -127,7 +127,7 @@ a {
 
 .header-nav-bar {
   @include flex(row);
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   padding: $paragraph-spacing-small;
   background-color: $background-colour-light;
@@ -139,6 +139,7 @@ a {
 .main-nav {
   width: fit-content;
   margin: 0;
+  margin-left: auto;
 }
 
 .main-nav-link {
@@ -161,6 +162,12 @@ a {
 
 .main-nav-trigger-wrapper {
   display: none;
+}
+
+.header-phone-contact-link {
+  font-size: $font-size-medium;
+  color: $font-colour-blue;
+  margin-left: $paragraph-spacing-medium;
 }
 
 //********** Responsive Styles **********
