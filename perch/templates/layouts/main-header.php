@@ -19,7 +19,7 @@
 										), true);
 	$mainsitename      = "New World Windows";
 	$pagetitlename = " - New World Windows";
-	$sharing_image = '/images/new-world-windows-logo.png';
+	$sharing_image = '/images/default-sharing-image.png';
 
 	PerchSystem::set_var('domain',$domain);
 	PerchSystem::set_var('mainurl',$mainurl);
