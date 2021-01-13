@@ -6,9 +6,22 @@
 
 @use 'bits' as *; //Contains variables, media queries mixins etc.
 
+//*=========================================
+//** General styles **
+//*=========================================
+
 .blog-section {
-  padding: 0 $section-spacing-extra-large $paragraph-spacing-large;
+  padding: 0 $section-spacing-large $paragraph-spacing-large;
 }
+
+.blog-image {
+  max-height: 90vh;
+  margin: 0 auto;
+}
+
+//*=========================================
+//** Blog Index **
+//*=========================================
 
 .blog-index-item {
   margin-bottom: $section-spacing-medium;
@@ -24,10 +37,14 @@
 
 .paging {
   width: fit-content;
-  margin: 0 auto $section-spacing-small;
+  margin: 0 auto $section-spacing-medium;
 
   a {
     @include link-underline($font-colour-blue);
     color: $font-colour-blue;
   }
 }
+
+//*=========================================
+//** Blog Post **
+//*=========================================

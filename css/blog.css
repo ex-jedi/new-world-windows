@@ -1,5 +1,10 @@
 .blog-section {
-  padding: 0 40rem 10rem;
+  padding: 0 30rem 10rem;
+}
+
+.blog-image {
+  max-height: 90vh;
+  margin: 0 auto;
 }
 
 .blog-index-item {
@@ -30,7 +35,7 @@
 .paging {
   width: -webkit-fit-content;
   width: fit-content;
-  margin: 0 auto 20rem;
+  margin: 0 auto 25rem;
 }
 .paging a {
   transition: all 0.2s ease-out 0s;
