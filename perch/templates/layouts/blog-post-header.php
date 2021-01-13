@@ -5,9 +5,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="/css/main.css">
 		<link rel="stylesheet" href="/css/blog.css">
-
+		<!-- Typekit  -->
+		<link rel="stylesheet" href="https://use.typekit.net/fmp5gzf.css">
 		<!-- Perch Meta -->
-	 	<?php perch_blog_post_meta(perch_get('s'));
+		<?php perch_blog_post_meta(perch_get('s'));
 
 		perch_page_attributes(array(
 			'template' => 'favicons.html'
@@ -24,13 +25,14 @@
 	</head>
 	<body>
 	  <div class="site-wrapper blog-post-wrapper">
-	    <header class="main-header blog-header">
-				<div class="header-inner">
-					<nav class="main-nav">
-						<?php perch_pages_navigation(array(
-							'hide-extensions' => true,
-						)); ?>
-					</nav>
-				</div>
-				<?php perch_content('Header Title'); ?>
-	    </header>
+		<header class="main-header blog-post-header">
+			<!-- Skip to main content link  -->
+			<a class="show-on-focus"  href="#main-content">Skip to main content</a>
+			<div class="header-nav-bar">
+				<?php perch_content("Main Logo"); ?>
+				<?php perch_content("Header Phone Number"); ?>
+			<?php perch_pages_navigation(array(
+					'hide-extensions' => true,
+			)); ?>
+			</div>
+		</header>
