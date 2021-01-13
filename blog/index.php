@@ -3,6 +3,7 @@
 <main class="main-content services-main-content" id="main-content">
   <?php perch_blog_recent_posts(5); ?>
   <?php perch_content("Contact Form"); ?>
+  <?php perch_content("Instagram Section"); ?>
 </main>
 <?php perch_layout('main-footer'); ?>
 <?php perch_layout('general-footer-end-js'); ?>
