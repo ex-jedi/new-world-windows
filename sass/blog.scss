@@ -5,3 +5,29 @@
 //********** Imports **********
 
 @use 'bits' as *; //Contains variables, media queries mixins etc.
+
+.blog-section {
+  padding: 0 $section-spacing-extra-large $paragraph-spacing-large;
+}
+
+.blog-index-item {
+  margin-bottom: $section-spacing-medium;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.blog-index-title-link {
+  @include link-underline($font-colour-blue);
+  color: $font-colour-blue;
+}
+
+.paging {
+  width: fit-content;
+  margin: 0 auto $section-spacing-small;
+
+  a {
+    @include link-underline($font-colour-blue);
+    color: $font-colour-blue;
+  }
+}
