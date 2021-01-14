@@ -54,3 +54,27 @@
     border-bottom: 3px solid transparent;
   }
 }
+
+.blog-post-title {
+  font-size: 7rem;
+  word-break: break-word;
+}
+
+.blog-post-image-wrapper {
+  width: 100%;
+  margin-bottom: 10rem;
+}
+
+.blog-post-image {
+  width: 100%;
+  max-height: 100vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.blog-text-block {
+  margin-bottom: 10rem;
+}
+.blog-text-block p:last-of-type {
+  margin-bottom: 0;
+}

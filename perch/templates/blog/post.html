@@ -6,14 +6,15 @@
 <!-- So the title and category order can be changed with flex order  -->
 <div class="post-body-wrapper">
 <!--Top  Image -->
-<img class="blog-post-main-image blog-post-image" src="<perch:blog id="blogPostMainImage" type="image" width="1700" label="Main Blog Post Image &amp; Blog Index Image" help="This image will display on the blog index page and at the top of the blog post." order="1">" alt="<perch:blog id="alt" type="text" label="Image Description" help="Briefly describe what the image is showing" size="l" order="2">"
-sizes="75vw"
-srcset="<perch:blog type="image" id="blogPostMainImage" width="1700" > 1700w,
-<perch:blog type="image" id="blogPostMainImage" width="1500" > 1500w,
-<perch:blog type="image" id="blogPostMainImage" width="1200" > 1200w,
-<perch:blog type="image" id="blogPostMainImage" width="900" > 900w,
-<perch:blog type="image" id="blogPostMainImage" width="600" > 600w" >
-
+<div class="blog-post-image-wrapper">
+  <img class="blog-post-main-image blog-post-image" src="<perch:blog id="blogPostMainImage" type="image" width="1700" label="Main Blog Post Image &amp; Blog Index Image" help="This image will display on the blog index page and at the top of the blog post." order="1">" alt="<perch:blog id="alt" type="text" label="Image Description" help="Briefly describe what the image is showing" size="l" order="2">"
+  sizes="75vw"
+  srcset="<perch:blog type="image" id="blogPostMainImage" width="1700" > 1700w,
+  <perch:blog type="image" id="blogPostMainImage" width="1500" > 1500w,
+  <perch:blog type="image" id="blogPostMainImage" width="1200" > 1200w,
+  <perch:blog type="image" id="blogPostMainImage" width="900" > 900w,
+  <perch:blog type="image" id="blogPostMainImage" width="600" > 600w" >
+</div>
 
 <!-- Edit Slug -->
 <perch:blog id="postSlug" type="slug" editable="true" label="Blog Post Slug" help="This is the text that goes after your web address (newworldwindows.co.uk/articles/this-bit-is-the-slug). This is generated automatically from the article title. You won't normally need to change this. If you do need to change this use numbers, letters and hyphens only with no spaces. The link won't work if you use anything else. If the slug is changed after the page has been published, links using the previous slug won't work anymore." for="postTitle" suppress="true" order="4">
@@ -72,7 +73,7 @@ srcset="<perch:blog type="image" id="blogPostMainImage" width="1700" > 1700w,
   	</perch:block>
 
     <perch:block type="embed" icon="video" label="Embed Videos"> <!-- Video Embed  -->
-      <div class=" embed blog-embed">
+      <div class="embed blog-video-embed">
         <perch:blog id="videoEmbedBlock" type="textarea" editor="markitup" html="true" help="Paste the embed code into the box. This block can be dragged up or down to reorder" size="m">
         </div>
     </perch:block>

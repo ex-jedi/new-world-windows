@@ -48,3 +48,29 @@
 //*=========================================
 //** Blog Post **
 //*=========================================
+
+.blog-post-title {
+  font-size: $heading-size-large;
+  word-break: break-word;
+}
+
+.blog-post-image-wrapper {
+  width: 100%;
+  margin-bottom: $paragraph-spacing-large;
+}
+
+.blog-post-image {
+  width: 100%;
+  max-height: 100vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.blog-text-block {
+  margin-bottom: $paragraph-spacing-large;
+  p {
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
