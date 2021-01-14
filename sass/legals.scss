@@ -1,0 +1,21 @@
+//*==============================================================================
+//** Legals SCSS **
+//*==============================================================================
+
+//********** Imports **********
+
+@use 'bits' as *; //Contains variables, media queries mixins etc.
+
+.legals-section {
+  background-color: #fff;
+}
+
+.legals-header {
+  height: auto;
+  padding: 0;
+}
+
+.legals-section {
+  padding: $section-spacing-medium $section-spacing-large
+    $section-spacing-medium;
+}

@@ -1,6 +1,5 @@
 <?php include('perch/runtime.php'); ?> <!-- Perch initialisation code -->
-<?php perch_layout('main-header'); ?>
-<?php perch_layout('main-header-end'); ?>
+<?php perch_layout('legals-header'); ?>
 	<main class="legals privacy-policy">
 			<?php perch_content('Privacy And Cookie Policy'); ?>
 	</main>
