@@ -7,6 +7,15 @@
 @use 'bits' as *; //Contains variables, media queries mixins etc.
 
 //*=========================================
+//** General Styles **
+//*=========================================
+
+.homepage-subheading-link {
+  color: $font-colour-blue;
+  @include link-underline($font-colour-blue);
+}
+
+//*=========================================
 //** Three Image Section **
 //*=========================================
 

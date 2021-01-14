@@ -1,3 +1,21 @@
+.homepage-subheading-link {
+  color: #3f80c2;
+  transition: all 0.2s ease-out 0s;
+  border-bottom: 4px solid transparent;
+  padding-bottom: 5px;
+}
+.homepage-subheading-link:hover, .homepage-subheading-linkfocus {
+  border-bottom: 4px solid #3f80c2;
+  padding-bottom: 0;
+  margin-bottom: 5px;
+  outline: 0;
+}
+@media (max-width: 800px) {
+  .homepage-subheading-link:hover, .homepage-subheading-linkfocus {
+    border-bottom: 3px solid transparent;
+  }
+}
+
 .three-image-flex-wrapper {
   display: flex;
   flex-direction: row;
