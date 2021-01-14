@@ -1,4 +1,4 @@
-<footer class="main-footer" itemscope itemtype="http://schema.org/LocalBusiness">
+<footer class="main-footer">
 		<?php perch_content("Footer Contact Details"); ?>
 		<?php perch_content("Footer Social Media"); ?>
 		<div class="footer-legals">
