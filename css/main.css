@@ -55,6 +55,11 @@ section {
   overflow: hidden;
   padding: 0 10rem 25rem;
 }
+@media (max-width: 1400px) {
+  section {
+    padding: 0 2.5rem 20rem;
+  }
+}
 
 p {
   margin: 0 auto 5rem;
@@ -129,6 +134,11 @@ a {
     border-bottom: 3px solid transparent;
   }
 }
+@media (max-width: 1400px) {
+  .main-nav-link {
+    margin: 0 2.5rem 0 0;
+  }
+}
 .main-nav-link:last-of-type {
   margin: 0;
 }
@@ -147,10 +157,20 @@ a {
   color: #3f80c2;
   margin-left: 5rem;
 }
+@media (max-width: 1400px) {
+  .header-phone-contact-link {
+    margin-left: 2.5rem;
+  }
+}
 
 .main-header {
   position: relative;
   padding-bottom: 25rem;
+}
+@media (max-width: 1300px) {
+  .main-header {
+    padding-bottom: 10rem;
+  }
 }
 
 .main-logo-wrapper {
@@ -168,19 +188,28 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  height: 70vh;
+}
+@media (max-width: 1300px) {
+  .header-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+  }
 }
 
 .header-text-wrapper,
 .header-main-image-wrapper {
   flex: 1 0 auto;
   width: 50%;
-  height: 100%;
   overflow: hidden;
   margin: 0;
   background-color: #3f80c2;
+}
+@media (max-width: 1300px) {
+  .header-text-wrapper,
+.header-main-image-wrapper {
+    width: 100%;
+  }
 }
 
 .header-text-wrapper {
@@ -190,6 +219,10 @@ a {
   justify-content: space-around;
   padding: 5rem;
   color: #f4f1f0;
+}
+
+.header-main-image-wrapper {
+  max-height: 70vh;
 }
 
 .main-header-heading {
