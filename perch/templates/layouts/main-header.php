@@ -34,8 +34,8 @@
 
 </head>
 <!-- Cookie Warning -->
-<?php perch_content("Cookie Warning"); ?>
-	<body class="<?php perch_page_attribute('bodyClass', array('template' => 'bits.html' )); ?>">
+<body class="<?php perch_page_attribute('bodyClass', array('template' => 'bits.html' )); ?>">
+	<?php perch_content("Cookie Warning"); ?>
 	<div class="site-wrapper" itemscope itemtype="http://schema.org/LocalBusiness">
 		<header class="main-header">
 			<!-- Skip to main content link  -->
