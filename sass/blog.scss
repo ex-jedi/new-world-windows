@@ -10,8 +10,14 @@
 //** General styles **
 //*=========================================
 
+.blog-post-header {
+  height: auto;
+  padding: 0;
+}
+
 .blog-section {
-  padding: 0 $section-spacing-large $paragraph-spacing-large;
+  padding: $section-spacing-medium $section-spacing-large
+    $section-spacing-medium;
 }
 
 .blog-image {
@@ -49,6 +55,10 @@
 //** Blog Post **
 //*=========================================
 
+.blog-post-article {
+  background-color: #fff;
+}
+
 .blog-post-title {
   font-size: $heading-size-large;
   word-break: break-word;
@@ -73,4 +83,22 @@
       margin-bottom: 0;
     }
   }
+}
+
+.blog-embed {
+  @include flex(column);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto $paragraph-spacing-large;
+}
+
+.blog-general-embed {
+  iframe {
+    max-width: 100%;
+  }
+}
+
+.blog-post-date-author {
+  text-align: center;
 }
