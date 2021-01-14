@@ -36,6 +36,10 @@
   }
 }
 
+.blog-index-title {
+  text-align: center;
+}
+
 .blog-index-title-link {
   @include link-underline($font-colour-blue);
   color: $font-colour-blue;
