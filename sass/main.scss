@@ -226,7 +226,7 @@ a {
     @include flex(column);
     justify-content: flex-start;
     align-items: center;
-    padding-top: 15rem;
+    padding: 15rem $paragraph-spacing-tiny $paragraph-spacing-medium;
   }
 }
 
@@ -242,6 +242,10 @@ a {
     top: 0;
     transform: translateY(-100%);
     transition: 0.4s all ease;
+  }
+
+  @include breakpoint(900) {
+    padding-top: $section-spacing-small;
   }
 }
 
@@ -265,7 +269,7 @@ a {
 
   @include breakpoint(900) {
     position: absolute;
-    top: $paragraph-spacing-small;
+    top: $paragraph-spacing-medium;
     right: 50%;
     transform: translateX(50%);
   }
@@ -279,7 +283,8 @@ a {
   background-color: $background-colour-light;
   color: $font-colour-blue;
   border-color: $font-colour-blue;
-  padding: $paragraph-spacing-tiny $paragraph-spacing-small;
+  padding: $paragraph-spacing-tiny;
+  min-width: 220px;
   cursor: pointer;
 }
 
@@ -349,6 +354,11 @@ a {
 
   @include breakpoint(1300) {
     width: 100%;
+  }
+
+  @include breakpoint(900) {
+    max-height: 150vh;
+    height: 100%;
   }
 }
 
