@@ -23,19 +23,43 @@
   @include flex(row);
   justify-content: space-between;
   width: 100%;
+
+  @include breakpoint(1300) {
+    @include flex(column);
+  }
+}
+
+.three-image-subheading {
+  font-size: $font-size-medium;
+  margin-bottom: $heading-spacing-small;
 }
 
 .three-image-block-wrapper {
   flex: 0 1 auto;
   width: 30%;
+
+  @include breakpoint(1300) {
+    width: 33%;
+  }
+
+  @include breakpoint(1300) {
+    width: 100%;
+    margin-bottom: $section-spacing-extra-small;
+  }
+}
+
+.three-image-image-wrapper {
+  width: 100%;
 }
 
 .three-image-image {
-  margin-bottom: $paragraph-spacing-medium;
+  width: 100%;
+  margin: 0 auto $paragraph-spacing-medium;
 }
 
 .three-image-paragraph {
   text-align: center;
+  margin-bottom: 0;
 }
 
 //*=========================================

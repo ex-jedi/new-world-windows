@@ -233,6 +233,7 @@ a {
 .header-subheading {
   font-size: 4rem;
   font-weight: normal;
+  width: 100%;
 }
 
 .header-link {
