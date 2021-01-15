@@ -192,6 +192,10 @@ a {
   position: relative;
   padding-bottom: $section-spacing-medium;
 
+  @include breakpoint(1400) {
+    padding-bottom: $section-spacing-small;
+  }
+
   @include breakpoint(1300) {
     padding-bottom: $section-spacing-extra-small;
   }

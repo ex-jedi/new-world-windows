@@ -167,6 +167,11 @@ a {
   position: relative;
   padding-bottom: 25rem;
 }
+@media (max-width: 1400px) {
+  .main-header {
+    padding-bottom: 20rem;
+  }
+}
 @media (max-width: 1300px) {
   .main-header {
     padding-bottom: 10rem;

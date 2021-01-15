@@ -1,6 +1,11 @@
 .services-section {
   padding: 0 30rem 20rem;
 }
+@media (max-width: 1400px) {
+  .services-section {
+    padding: 0 20rem 20rem;
+  }
+}
 
 .full-width-repeater-image {
   max-height: 90vh;
@@ -9,4 +14,10 @@
 
 .full-width-repeater-wrapper {
   margin-bottom: 20rem;
+}
+.full-width-repeater-wrapper:last-of-type {
+  margin-bottom: 0;
+}
+.full-width-repeater-wrapper p:last-of-type {
+  margin-bottom: 0;
 }
