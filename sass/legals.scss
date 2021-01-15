@@ -18,4 +18,12 @@
 .legals-section {
   padding: $section-spacing-medium $section-spacing-large
     $section-spacing-medium;
+
+  @include breakpoint(1600) {
+    padding: $section-spacing-medium $section-spacing-small;
+  }
+
+  @include breakpoint(1200) {
+    padding: $section-spacing-extra-small $paragraph-spacing-medium;
+  }
 }
