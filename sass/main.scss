@@ -532,6 +532,7 @@ select {
 
 .footer-contact-div {
   @include flex(column);
+  justify-content: flex-start;
   align-items: center;
 
   span {
@@ -560,10 +561,15 @@ select {
 
 .footer-legals {
   @include flex(column);
+  justify-content: space-between;
   align-items: center;
 
   a {
     text-decoration: underline;
+  }
+
+  p {
+    margin: 0 auto $paragraph-spacing-tiny;
   }
 }
 

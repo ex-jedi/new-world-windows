@@ -15,11 +15,6 @@
   padding: 0;
 }
 
-.blog-post-article {
-  padding: $section-spacing-medium $section-spacing-large
-    $section-spacing-medium;
-}
-
 .blog-image {
   max-height: 90vh;
   margin: 0 auto;
@@ -61,6 +56,12 @@
 
 .blog-post-article {
   background-color: #fff;
+  padding: $section-spacing-medium $section-spacing-large
+    $section-spacing-medium;
+
+  @include breakpoint(1400) {
+    padding: $section-spacing-small;
+  }
 }
 
 .blog-post-title {

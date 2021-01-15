@@ -1,6 +1,11 @@
 .about-us-section {
   padding: 0 30rem 20rem;
 }
+@media (max-width: 1400px) {
+  .about-us-section {
+    padding: 0 20rem 20rem;
+  }
+}
 
 .full-width-image {
   max-height: 90vh;
@@ -36,6 +41,11 @@
   width: 30%;
   margin-right: 5rem;
 }
+@media (max-width: 1400px) {
+  .bio-image-wrapper {
+    width: 40%;
+  }
+}
 
 .bio-image {
   width: 100%;
@@ -47,6 +57,11 @@
   flex: 1 1 auto;
   width: 70%;
   margin: 0;
+}
+@media (max-width: 1400px) {
+  .bio-text-wrapper {
+    width: 60%;
+  }
 }
 
 .bio-name {

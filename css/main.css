@@ -502,6 +502,7 @@ select {
 .footer-contact-div {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
 }
 .footer-contact-div span {
@@ -529,10 +530,14 @@ select {
 .footer-legals {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 }
 .footer-legals a {
   text-decoration: underline;
+}
+.footer-legals p {
+  margin: 0 auto 1rem;
 }
 
 .footer-credit {
