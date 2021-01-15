@@ -63,6 +63,12 @@
   padding: 10rem;
   font-size: 3rem;
 }
+@media (max-width: 1400px) {
+  .section-text-wrapper {
+    padding: 2rem;
+  }
+}
+
 .parallax-image-section {
   margin-bottom: 20rem;
   padding: 0;

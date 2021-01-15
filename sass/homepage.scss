@@ -67,7 +67,8 @@
   padding: $paragraph-spacing-large;
   font-size: $font-size-main;
 
-  p {
+  @include breakpoint(1400) {
+    padding: $paragraph-spacing-smaller;
   }
 }
 

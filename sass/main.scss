@@ -301,6 +301,10 @@ body {
   background-color: $background-colour-one;
   color: $font-colour-light;
   padding: $section-spacing-extra-small $section-spacing-medium;
+
+  @include breakpoint(1400) {
+    padding: $section-spacing-extra-small $section-spacing-extra-small;
+  }
 }
 
 .general-contact-form-wrapper {
@@ -310,7 +314,7 @@ body {
 
 .general-contact-form-input-wrapper {
   @include flex(row);
-  justify-content: flex-end;
+  justify-content: center;
   align-items: flex-start;
   font-size: $font-size-main;
   margin-bottom: $section-spacing-small;
@@ -322,16 +326,11 @@ body {
 }
 
 .general-contact-form-label {
-  width: $section-spacing-large;
+  width: $section-spacing-small;
   flex: 0 1 auto;
   font-weight: 700;
   vertical-align: bottom;
   line-height: 0.7;
-
-  @include breakpoint(700) {
-    line-height: normal;
-    margin-bottom: $paragraph-spacing-medium;
-  }
 }
 
 .text-area-label {
@@ -343,10 +342,6 @@ body {
   border: 3px solid transparent;
   padding: 1rem;
   transition: $transition-two;
-
-  @include breakpoint(700) {
-    width: 100%;
-  }
 
   &:focus,
   &:active {
