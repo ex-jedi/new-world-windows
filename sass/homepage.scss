@@ -260,16 +260,20 @@
 }
 
 .testimonial-wrapper {
-  @include flex(row);
   width: 100%;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .testimonial-image-wrapper {
-  flex: 1 1 auto;
+  float: left;
   width: 30%;
-  margin-right: $paragraph-spacing-medium;
+  margin: 0 $paragraph-spacing-small $paragraph-spacing-small 0;
+
+  @include breakpoint(700) {
+    width: 100%;
+    margin-bottom: $paragraph-spacing-medium;
+  }
 }
 
 .testimonial-image {
@@ -279,8 +283,7 @@
 }
 
 .testimonial-text-wrapper {
-  flex: 1 1 auto;
-  width: 70%;
+  width: 100%;
   margin: 0;
 }
 
