@@ -439,6 +439,7 @@ select {
   font-weight: bold;
   border-radius: 0;
   transition: all ease 0.4s;
+  -webkit-appearance: none;
 }
 .submit:hover {
   background-color: #f4f1f0;

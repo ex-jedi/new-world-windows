@@ -474,6 +474,7 @@ select {
   font-weight: bold;
   border-radius: 0;
   transition: all ease $timing-duration-medium;
+  -webkit-appearance: none;
 
   &:hover {
     background-color: $background-colour-light;
