@@ -20,6 +20,11 @@
 .full-width-repeater-wrapper {
   margin-bottom: 20rem;
 }
+@media (max-width: 1300px) {
+  .full-width-repeater-wrapper {
+    margin-bottom: 10rem;
+  }
+}
 .full-width-repeater-wrapper:last-of-type {
   margin-bottom: 0;
 }

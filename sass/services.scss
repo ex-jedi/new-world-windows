@@ -28,6 +28,10 @@
 .full-width-repeater-wrapper {
   margin-bottom: $section-spacing-small;
 
+  @include breakpoint(1300) {
+    margin-bottom: $section-spacing-extra-small;
+  }
+
   &:last-of-type {
     margin-bottom: 0;
   }
