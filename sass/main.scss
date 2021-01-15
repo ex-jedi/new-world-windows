@@ -684,6 +684,12 @@ select {
     font-size: $font-size-small;
   }
 
+  @include breakpoint(1100) {
+    @include flex(column);
+    align-items: center;
+    padding: $paragraph-spacing-medium;
+  }
+
   a {
     color: $font-colour-light;
   }
@@ -694,12 +700,20 @@ select {
 .footer-legals {
   flex: 1 0 auto;
   width: 30%;
+
+  @include breakpoint(1100) {
+    width: 100%;
+  }
 }
 
 .footer-contact-div {
   @include flex(column);
   justify-content: flex-start;
   align-items: center;
+
+  @include breakpoint(1100) {
+    margin-bottom: $paragraph-spacing-large;
+  }
 
   span {
     margin-bottom: $paragraph-spacing-tiny;
@@ -714,6 +728,10 @@ select {
   @include flex(row);
   align-items: flex-start;
   justify-content: center;
+
+  @include breakpoint(1100) {
+    margin-bottom: $paragraph-spacing-large;
+  }
 }
 
 .footer-social-media-link {
