@@ -488,6 +488,11 @@ select {
   overflow: hidden;
   color: #f4f1f0;
 }
+@media (max-width: 1400px) {
+  .main-footer {
+    font-size: 2rem;
+  }
+}
 .main-footer a {
   color: #f4f1f0;
 }

@@ -518,6 +518,10 @@ select {
   overflow: hidden;
   color: $font-colour-light;
 
+  @include breakpoint(1400) {
+    font-size: $font-size-small;
+  }
+
   a {
     color: $font-colour-light;
   }
