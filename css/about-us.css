@@ -3,7 +3,12 @@
 }
 @media (max-width: 1400px) {
   .about-us-section {
-    padding: 0 20rem 20rem;
+    padding: 0 20rem 10rem;
+  }
+}
+@media (max-width: 1200px) {
+  .about-us-section {
+    padding: 0 1rem 10rem;
   }
 }
 
@@ -26,6 +31,9 @@
 
 .bio-wrapper {
   margin-bottom: 10rem;
+}
+.bio-wrapper:last-of-type {
+  margin-bottom: 0;
 }
 
 .bio-flex-wrapper {

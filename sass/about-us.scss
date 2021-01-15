@@ -14,7 +14,11 @@
   padding: 0 $section-spacing-large $section-spacing-small;
 
   @include breakpoint(1400) {
-    padding: 0 $section-spacing-small $section-spacing-small;
+    padding: 0 $section-spacing-small $section-spacing-extra-small;
+  }
+
+  @include breakpoint(1200) {
+    padding: 0 $paragraph-spacing-tiny $section-spacing-extra-small;
   }
 }
 
@@ -45,6 +49,10 @@
 
 .bio-wrapper {
   margin-bottom: $section-spacing-extra-small;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .bio-flex-wrapper {
