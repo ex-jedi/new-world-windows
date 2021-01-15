@@ -35,15 +35,22 @@
   padding-bottom: 5px;
   color: #3f80c2;
 }
+@media (max-width: 1200px) {
+  .blog-index-title-link {
+    text-decoration: underline;
+  }
+}
 .blog-index-title-link:hover, .blog-index-title-linkfocus {
   border-bottom: 4px solid #3f80c2;
   padding-bottom: 0;
   margin-bottom: 5px;
   outline: 0;
 }
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .blog-index-title-link:hover, .blog-index-title-linkfocus {
-    border-bottom: 3px solid transparent;
+    border-bottom: 4px solid transparent;
+    margin-bottom: 2.5rem;
+    padding: 0;
   }
 }
 
@@ -58,15 +65,22 @@
   padding-bottom: 5px;
   color: #3f80c2;
 }
+@media (max-width: 1200px) {
+  .paging a {
+    text-decoration: underline;
+  }
+}
 .paging a:hover, .paging afocus {
   border-bottom: 4px solid #3f80c2;
   padding-bottom: 0;
   margin-bottom: 5px;
   outline: 0;
 }
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .paging a:hover, .paging afocus {
-    border-bottom: 3px solid transparent;
+    border-bottom: 4px solid transparent;
+    margin-bottom: 2.5rem;
+    padding: 0;
   }
 }
 @media (max-width: 1400px) {

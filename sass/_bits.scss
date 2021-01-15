@@ -167,6 +167,10 @@ $transition-two-cubic: $timing-duration-slow $cubic-one 0s;
   border-bottom: 4px solid transparent;
   padding-bottom: 5px;
 
+  @include breakpoint(1200) {
+    text-decoration: underline;
+  }
+
   &:hover,
   &focus {
     border-bottom: 4px solid $colour;
@@ -174,8 +178,10 @@ $transition-two-cubic: $timing-duration-slow $cubic-one 0s;
     margin-bottom: 5px;
     outline: 0;
 
-    @include breakpoint(800) {
-      border-bottom: 3px solid transparent;
+    @include breakpoint(1200) {
+      border-bottom: 4px solid transparent;
+      margin-bottom: $paragraph-spacing-small;
+      padding: 0;
     }
   }
 }

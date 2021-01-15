@@ -185,6 +185,11 @@ a {
     margin: 0 $paragraph-spacing-small 0 0;
   }
 
+  @include breakpoint(1200) {
+    margin: 0 auto $paragraph-spacing-small;
+    padding: 0;
+  }
+
   &:last-of-type {
     margin: 0;
   }
@@ -228,14 +233,20 @@ a {
     background-color: $background-colour-light;
     position: absolute;
     right: 0;
-    top: -100%;
-    opacity: 0;
-    transition: 1s all ease-out;
+    top: 0;
+    transform: translateY(-100%);
+    transition: 0.4s all ease;
+  }
+}
+
+.main-nav-link {
+  @include breakpoint(1200) {
+    font-size: $font-size-medium;
   }
 }
 
 .main-nav-reveal {
-  top: 0;
+  transform: translateY(0);
   opacity: 1;
 }
 
@@ -261,6 +272,11 @@ a {
   cursor: pointer;
 }
 
+#main-nav-current {
+  @include breakpoint(1200) {
+    text-decoration: none;
+  }
+}
 //*=========================================
 //** Header **
 //*=========================================
@@ -268,6 +284,7 @@ a {
 .main-header {
   position: relative;
   padding-bottom: $section-spacing-medium;
+  position: relative;
 
   @include breakpoint(1400) {
     padding-bottom: $section-spacing-small;

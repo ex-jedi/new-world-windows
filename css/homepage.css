@@ -4,15 +4,22 @@
   border-bottom: 4px solid transparent;
   padding-bottom: 5px;
 }
+@media (max-width: 1200px) {
+  .homepage-subheading-link {
+    text-decoration: underline;
+  }
+}
 .homepage-subheading-link:hover, .homepage-subheading-linkfocus {
   border-bottom: 4px solid #3f80c2;
   padding-bottom: 0;
   margin-bottom: 5px;
   outline: 0;
 }
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .homepage-subheading-link:hover, .homepage-subheading-linkfocus {
-    border-bottom: 3px solid transparent;
+    border-bottom: 4px solid transparent;
+    margin-bottom: 2.5rem;
+    padding: 0;
   }
 }
 
@@ -281,14 +288,21 @@
   padding-bottom: 5px;
   color: #3f80c2;
 }
+@media (max-width: 1200px) {
+  .testimonial-link {
+    text-decoration: underline;
+  }
+}
 .testimonial-link:hover, .testimonial-linkfocus {
   border-bottom: 4px solid #3f80c2;
   padding-bottom: 0;
   margin-bottom: 5px;
   outline: 0;
 }
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .testimonial-link:hover, .testimonial-linkfocus {
-    border-bottom: 3px solid transparent;
+    border-bottom: 4px solid transparent;
+    margin-bottom: 2.5rem;
+    padding: 0;
   }
 }

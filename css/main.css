@@ -150,20 +150,33 @@ a {
   border-bottom: 4px solid transparent;
   padding-bottom: 5px;
 }
+@media (max-width: 1200px) {
+  .main-nav-link {
+    text-decoration: underline;
+  }
+}
 .main-nav-link:hover, .main-nav-linkfocus {
   border-bottom: 4px solid #3c2323;
   padding-bottom: 0;
   margin-bottom: 5px;
   outline: 0;
 }
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .main-nav-link:hover, .main-nav-linkfocus {
-    border-bottom: 3px solid transparent;
+    border-bottom: 4px solid transparent;
+    margin-bottom: 2.5rem;
+    padding: 0;
   }
 }
 @media (max-width: 1400px) {
   .main-nav-link {
     margin: 0 2.5rem 0 0;
+  }
+}
+@media (max-width: 1200px) {
+  .main-nav-link {
+    margin: 0 auto 2.5rem;
+    padding: 0;
   }
 }
 .main-nav-link:last-of-type {
@@ -203,14 +216,20 @@ a {
     background-color: #f4f1f0;
     position: absolute;
     right: 0;
-    top: -100%;
-    opacity: 0;
-    transition: 1s all ease-out;
+    top: 0;
+    transform: translateY(-100%);
+    transition: 0.4s all ease;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main-nav-link {
+    font-size: 4rem;
   }
 }
 
 .main-nav-reveal {
-  top: 0;
+  transform: translateY(0);
   opacity: 1;
 }
 
@@ -236,9 +255,16 @@ a {
   cursor: pointer;
 }
 
+@media (max-width: 1200px) {
+  #main-nav-current {
+    text-decoration: none;
+  }
+}
+
 .main-header {
   position: relative;
   padding-bottom: 25rem;
+  position: relative;
 }
 @media (max-width: 1400px) {
   .main-header {
@@ -525,15 +551,22 @@ select {
   padding-bottom: 5px;
   color: #3f80c2;
 }
+@media (max-width: 1200px) {
+  .instagram-heading-link {
+    text-decoration: underline;
+  }
+}
 .instagram-heading-link:hover, .instagram-heading-linkfocus {
   border-bottom: 4px solid #3f80c2;
   padding-bottom: 0;
   margin-bottom: 5px;
   outline: 0;
 }
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .instagram-heading-link:hover, .instagram-heading-linkfocus {
-    border-bottom: 3px solid transparent;
+    border-bottom: 4px solid transparent;
+    margin-bottom: 2.5rem;
+    padding: 0;
   }
 }
 
