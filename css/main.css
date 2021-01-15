@@ -108,7 +108,8 @@ img {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
+  color: #3f80c2;
 }
 
 .main-site-button {
@@ -150,6 +151,7 @@ a {
   transition: all 0.2s ease-out 0s;
   border-bottom: 4px solid transparent;
   padding-bottom: 5px;
+  text-decoration: none;
 }
 @media (max-width: 1200px) {
   .main-nav-link {
@@ -197,6 +199,7 @@ a {
   font-size: 4rem;
   color: #3f80c2;
   margin-left: 5rem;
+  text-decoration: none;
 }
 @media (max-width: 1400px) {
   .header-phone-contact-link {
@@ -578,6 +581,7 @@ select {
   transition: all 0.2s ease-out 0s;
   border-bottom: 4px solid transparent;
   padding-bottom: 5px;
+  text-decoration: none;
   color: #3f80c2;
 }
 @media (max-width: 1200px) {

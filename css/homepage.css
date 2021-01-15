@@ -3,6 +3,7 @@
   transition: all 0.2s ease-out 0s;
   border-bottom: 4px solid transparent;
   padding-bottom: 5px;
+  text-decoration: none;
 }
 @media (max-width: 1200px) {
   .homepage-subheading-link {
@@ -290,6 +291,7 @@
   transition: all 0.2s ease-out 0s;
   border-bottom: 4px solid transparent;
   padding-bottom: 5px;
+  text-decoration: none;
   color: #3f80c2;
 }
 @media (max-width: 1200px) {

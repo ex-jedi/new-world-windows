@@ -166,6 +166,7 @@ $transition-two-cubic: $timing-duration-slow $cubic-one 0s;
   transition: all $transition-two;
   border-bottom: 4px solid transparent;
   padding-bottom: 5px;
+  text-decoration: none;
 
   @include breakpoint(1200) {
     text-decoration: underline;

@@ -40,39 +40,9 @@
 
   <!-- Text block  -->
 
-    <!-- Pull Quote -->
-    <perch:block type="pull-quote" icon="quote" label="Pull Quote With Optional Citation">
-      <!-- With Citation -->
-      <perch:if exists="citationLink">
-        <!-- And Link -->
-        <blockquote class="blog-pull-quote blog-pull-quote-with-citation" cite="<perch:blog id="citationLink" type="text" label="Optional Citation Link" help="Paste in full URL">">
-        <perch:else>
-          <!-- Without Link or Without Citation  -->
-          <blockquote class="blog-pull-quote">
-      </perch:if>
 
-      <div class="pull-quote-text">
-        <perch:blog id="pullQuoteText" type="textarea" editor="redactor" html="true" help="This block can be dragged up or down to reorder" count="words" order="1">
-      </div>
-
-      <perch:if exists="citationLink AND citationText">
-          <p class="pull-quote-citation">
-            <a class="pull-quote-citation-link"  href="<perch:blog id="citationLink">" target="_blank" title="Open in new tab">
-              <perch:blog id="citationText" type="text" label="Optional Citation" order="2">
-            </a>
-          </p>
-      <perch:else>
-        <perch:if exists="citationText">
-          <p class="pull-quote-citation">
-            <perch:blog id="citationText">
-          </p>
-        </perch:if>
-    </perch:if>
-
-      </blockquote>
-  	</perch:block>
-
-    <perch:block type="embed" icon="video" label="Embed Videos"> <!-- Video Embed  -->
+    <!-- Video Embed  -->
+    <perch:block type="embed" icon="video" label="Embed Videos">
       <div class="blog-embed blog-video-embed">
         <perch:blog id="videoEmbedBlock" type="textarea" editor="markitup" html="true" help="Paste the embed code into the box. This block can be dragged up or down to reorder" size="m">
         </div>

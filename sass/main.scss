@@ -137,7 +137,8 @@ img {
 //********** Links **********
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
+  color: $font-colour-blue;
 }
 
 //********** Button **********
@@ -209,6 +210,7 @@ a {
   font-size: $font-size-medium;
   color: $font-colour-blue;
   margin-left: $paragraph-spacing-medium;
+  text-decoration: none;
 
   @include breakpoint(1400) {
     margin-left: $paragraph-spacing-small;
