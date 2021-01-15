@@ -178,7 +178,6 @@ a {
 .main-nav-trigger-wrapper {
   display: none;
 }
-
 .header-phone-contact-link {
   font-size: 4rem;
   color: #3f80c2;
@@ -188,6 +187,44 @@ a {
   .header-phone-contact-link {
     margin-left: 2.5rem;
   }
+}
+
+.header-nav-bar {
+  align-items: center;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 5rem;
+  background-color: #f4f1f0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .main-nav-trigger-wrapper {
+    display: block;
+    z-index: 2;
+    margin-left: auto;
+    right: 2.5rem;
+    top: 2.5rem;
+  }
+}
+
+.main-nav-trigger {
+  font-weight: bold;
+  border-width: 4px;
+  border-style: solid;
+  transition: 0.3s all ease;
+  background-color: #f4f1f0;
+  color: #3f80c2;
+  border-color: #3f80c2;
+  padding: 1rem 2.5rem;
 }
 
 .main-header {
@@ -255,6 +292,7 @@ a {
 
 .main-header-heading {
   margin: 0 0 2.5rem;
+  text-align: left;
 }
 
 .header-subheading {
