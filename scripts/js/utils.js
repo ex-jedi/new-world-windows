@@ -814,7 +814,7 @@ async function displayInstagramFeed() {
 
   const feed = new Instafeed({
     accessToken: instagramToken,
-    limit: 12,
+    limit: 16,
     template: `
     <div class="instagram-image-wrapper">
       <a href="{{link}}">

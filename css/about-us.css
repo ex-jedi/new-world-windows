@@ -37,21 +37,20 @@
 }
 
 .bio-flex-wrapper {
-  display: flex;
-  flex-direction: row;
   width: 100%;
   justify-content: space-between;
   align-items: center;
 }
 
 .bio-image-wrapper {
-  flex: 1 1 auto;
+  float: left;
   width: 30%;
-  margin-right: 5rem;
+  margin-right: 2.5rem;
 }
-@media (max-width: 1400px) {
+@media (max-width: 700px) {
   .bio-image-wrapper {
-    width: 40%;
+    width: 100%;
+    margin: 0 auto 5rem;
   }
 }
 
@@ -62,18 +61,14 @@
 }
 
 .bio-text-wrapper {
-  flex: 1 1 auto;
-  width: 70%;
+  width: 100%;
   margin: 0;
-}
-@media (max-width: 1400px) {
-  .bio-text-wrapper {
-    width: 60%;
-  }
 }
 
 .bio-name {
   margin-bottom: 2.5rem;
+  width: -webkit-fit-content;
+  width: fit-content;
 }
 
 .bio-paragraph {
