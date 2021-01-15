@@ -119,12 +119,16 @@
   }
 }
 
-.left-image-wrapper {
-  order: 2;
+@media (max-width: 1400px) {
+  .left-image-wrapper {
+    order: 2;
+  }
 }
 
-.right-text-wrapper {
-  order: 1;
+@media (max-width: 1400px) {
+  .right-text-wrapper {
+    order: 1;
+  }
 }
 
 .parallax-image-section {

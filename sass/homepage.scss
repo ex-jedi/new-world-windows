@@ -109,11 +109,15 @@
 }
 
 .left-image-wrapper {
-  order: 2;
+  @include breakpoint(1400) {
+    order: 2;
+  }
 }
 
 .right-text-wrapper {
-  order: 1;
+  @include breakpoint(1400) {
+    order: 1;
+  }
 }
 
 //*=========================================

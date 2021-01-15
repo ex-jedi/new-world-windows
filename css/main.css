@@ -131,6 +131,7 @@ a {
   background-color: #f4f1f0;
   width: 100%;
   overflow: hidden;
+  position: relative;
 }
 
 .main-nav {
@@ -191,6 +192,7 @@ a {
 .main-nav-trigger-wrapper {
   display: none;
 }
+
 .header-phone-contact-link {
   font-size: 4rem;
   color: #3f80c2;
@@ -204,6 +206,15 @@ a {
 
 .header-nav-bar {
   align-items: center;
+}
+@media (max-width: 900px) {
+  .header-nav-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 15rem;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -238,8 +249,14 @@ a {
     display: block;
     z-index: 2;
     margin-left: auto;
-    right: 2.5rem;
+  }
+}
+@media (max-width: 900px) {
+  .main-nav-trigger-wrapper {
+    position: absolute;
     top: 2.5rem;
+    right: 50%;
+    transform: translateX(50%);
   }
 }
 
@@ -258,6 +275,12 @@ a {
 @media (max-width: 1200px) {
   #main-nav-current {
     text-decoration: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .header-phone-contact-link {
+    margin: 0 0 2.5rem;
   }
 }
 
@@ -281,6 +304,12 @@ a {
   width: 100%;
   height: auto;
   max-width: 150px;
+}
+@media (max-width: 900px) {
+  .main-logo-wrapper {
+    margin: 0 auto 2.5rem;
+    max-width: 300px;
+  }
 }
 
 .main-logo {
