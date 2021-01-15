@@ -6,6 +6,11 @@
     padding: 0 20rem 20rem;
   }
 }
+@media (max-width: 1200px) {
+  .services-section {
+    padding: 0 5rem 10rem;
+  }
+}
 
 .full-width-repeater-image {
   max-height: 90vh;

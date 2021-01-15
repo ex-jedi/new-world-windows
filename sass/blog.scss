@@ -24,8 +24,23 @@
 //** Blog Index **
 //*=========================================
 
+.blog-index-section {
+  @include breakpoint(1300) {
+    // padding: 0 $section-spacing-small $section-spacing-small;
+  }
+}
+
 .blog-index-item {
   margin-bottom: $section-spacing-medium;
+
+  @include breakpoint(1400) {
+    margin-bottom: $section-spacing-small;
+  }
+
+  @include breakpoint(1400) {
+    margin-bottom: $section-spacing-extra-small;
+  }
+
   &:last-of-type {
     margin-bottom: 0;
   }
@@ -48,6 +63,14 @@
     @include link-underline($font-colour-blue);
     color: $font-colour-blue;
   }
+
+  @include breakpoint(1400) {
+    margin-bottom: $section-spacing-small;
+  }
+
+  @include breakpoint(1200) {
+    margin-bottom: $section-spacing-extra-small;
+  }
 }
 
 //*=========================================
@@ -60,7 +83,11 @@
     $section-spacing-medium;
 
   @include breakpoint(1400) {
-    padding: $section-spacing-small;
+    padding: $section-spacing-small $section-spacing-extra-small;
+  }
+
+  @include breakpoint(1400) {
+    padding: $section-spacing-extra-small $paragraph-spacing-tiny;
   }
 }
 

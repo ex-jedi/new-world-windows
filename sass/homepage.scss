@@ -46,6 +46,10 @@
     width: 100%;
     margin-bottom: $section-spacing-extra-small;
   }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .three-image-image-wrapper {
@@ -70,6 +74,10 @@
   @include flex(row);
   justify-content: flex-start;
   height: auto;
+
+  @include breakpoint(1200) {
+    @include flex(column);
+  }
 }
 
 .section-image-wrapper,
@@ -77,6 +85,10 @@
   flex: 1 1 auto;
   width: 50%;
   height: auto;
+
+  @include breakpoint(1200) {
+    width: 100%;
+  }
 }
 
 .section-image {
@@ -94,6 +106,14 @@
   @include breakpoint(1400) {
     padding: $paragraph-spacing-smaller;
   }
+}
+
+.left-image-wrapper {
+  order: 2;
+}
+
+.right-text-wrapper {
+  order: 1;
 }
 
 //*=========================================
