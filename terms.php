@@ -4,4 +4,4 @@
 		<?php perch_content('Terms And Conditions'); ?>
 </main>
 <?php perch_layout('main-footer'); ?>
-<?php perch_layout('main-footer-end-js'); ?>
+<?php perch_layout('general-footer-end-js'); ?>
