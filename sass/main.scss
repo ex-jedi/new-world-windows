@@ -220,15 +220,23 @@ a {
 }
 
 .main-nav {
-  @include flex(column);
-  align-items: center;
-  width: 100%;
-  padding: $paragraph-spacing-medium;
-  background-color: $background-colour-light;
-  position: absolute;
-  right: 0;
+  @include breakpoint(1200) {
+    @include flex(column);
+    align-items: center;
+    width: 100%;
+    padding: $section-spacing-extra-small;
+    background-color: $background-colour-light;
+    position: absolute;
+    right: 0;
+    top: -100%;
+    opacity: 0;
+    transition: 1s all ease-out;
+  }
+}
+
+.main-nav-reveal {
   top: 0;
-  display: none;
+  opacity: 1;
 }
 
 .main-nav-trigger-wrapper {
@@ -250,6 +258,7 @@ a {
   color: $font-colour-blue;
   border-color: $font-colour-blue;
   padding: $paragraph-spacing-tiny $paragraph-spacing-small;
+  cursor: pointer;
 }
 
 //*=========================================
