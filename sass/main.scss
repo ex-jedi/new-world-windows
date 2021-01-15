@@ -324,8 +324,8 @@ a {
   max-width: 150px;
 
   @include breakpoint(900) {
-    margin: 0 auto $paragraph-spacing-small;
-    max-width: 300px;
+    margin: $paragraph-spacing-small auto $paragraph-spacing-medium;
+    max-width: 400px;
   }
 }
 
@@ -435,9 +435,14 @@ body {
   background-color: $background-colour-one;
   color: $font-colour-light;
   padding: $section-spacing-extra-small $section-spacing-medium;
+  overflow: hidden;
 
   @include breakpoint(1400) {
     padding: $section-spacing-extra-small $section-spacing-extra-small;
+  }
+
+  @include breakpoint(900) {
+    padding: $section-spacing-extra-small $paragraph-spacing-tiny;
   }
 }
 
@@ -452,6 +457,12 @@ body {
   align-items: flex-start;
   font-size: $font-size-main;
   margin-bottom: $section-spacing-small;
+
+  @include breakpoint(900) {
+    @include flex(column);
+    width: 100%;
+    margin-bottom: $section-spacing-extra-small;
+  }
 }
 
 .contact-form-subheading {
@@ -465,6 +476,11 @@ body {
   font-weight: 700;
   vertical-align: bottom;
   line-height: 0.7;
+
+  @include breakpoint(900) {
+    width: auto;
+    margin-bottom: $paragraph-spacing-small;
+  }
 }
 
 .text-area-label {
@@ -481,6 +497,10 @@ body {
   &:active {
     border: 3px solid $accent-colour-one;
   }
+
+  @include breakpoint(900) {
+    width: 100%;
+  }
 }
 
 .text-area-input {
@@ -493,6 +513,13 @@ body {
 .contact-consent-link {
   color: $font-colour-light;
   text-decoration: underline;
+}
+
+.contact-form-consent {
+  @include breakpoint(700) {
+    font-size: $font-size-small;
+    margin-right: 1rem;
+  }
 }
 
 //* Inherit fonts for inputs and buttons

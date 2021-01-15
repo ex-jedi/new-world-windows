@@ -6,7 +6,7 @@ import * as Flickity from 'flickity';
 import 'flickity-imagesloaded';
 import { homepageParallax } from './animations';
 import { displayInstagramFeed } from './utils';
-import { menuOpenerHandler, mainNav, mainNavTrigger } from './lib';
+import { menuOpenerHandler, mainNavTrigger } from './lib';
 
 // *==============================================================================
 // ** Page JS  **
@@ -35,6 +35,5 @@ homepageParallax();
 
 displayInstagramFeed();
 
-// ********** Menu **********
 // ********** Main Nav **********
 mainNavTrigger.addEventListener('click', menuOpenerHandler);
