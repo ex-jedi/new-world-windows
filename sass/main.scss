@@ -382,11 +382,19 @@ a {
   justify-content: space-around;
   padding: $paragraph-spacing-medium;
   color: $font-colour-light;
+
+  @include breakpoint(500) {
+    padding: $paragraph-spacing-small;
+  }
 }
 
 .main-header-heading {
   margin: 0 0 $paragraph-spacing-small;
   text-align: left;
+
+  @include breakpoint(500) {
+    font-size: $heading-size-medium;
+  }
 }
 
 .header-subheading {

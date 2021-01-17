@@ -94,6 +94,10 @@
 .blog-post-title {
   font-size: $heading-size-large;
   word-break: break-word;
+
+  @include breakpoint(500) {
+    font-size: $heading-size-medium;
+  }
 }
 
 .blog-post-image-wrapper {

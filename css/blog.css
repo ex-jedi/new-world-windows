@@ -115,6 +115,11 @@
   font-size: 7rem;
   word-break: break-word;
 }
+@media (max-width: 500px) {
+  .blog-post-title {
+    font-size: 5rem;
+  }
+}
 
 .blog-post-image-wrapper {
   width: 100%;
