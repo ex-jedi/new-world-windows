@@ -845,9 +845,63 @@ body:not(.user-is-tabbing) textarea:focus {
   }
 }
 
-//********** Cookie Warning **********
+//*=========================================
+//** Cookie Warning **
+//*=========================================
+
 .cookie-warning-wrapper {
-  display: none;
+  @include flex(row);
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 99%;
+  padding: 1rem;
+  font-size: $font-size-small;
+  background-color: $background-colour-one;
+  opacity: 0;
+  z-index: 10;
+  transition: all 0.5s 0.25s;
+
+  @include breakpoint(850) {
+    @include flex(column);
+  }
+}
+
+.cookie-warning-paragraph {
+  margin: 0 $section-spacing-small 0 0;
+  color: $font-colour-light;
+
+  @include breakpoint(1300) {
+    margin: 0 $paragraph-spacing-small 0 0;
+  }
+
+  @include breakpoint(850) {
+    text-align: center;
+    margin: 0 0 $paragraph-spacing-small;
+  }
+}
+
+.cookie-warning-link {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.cookie-warning-button {
+  background-color: transparent;
+  border: 2px solid $font-colour-light;
+  color: $font-colour-light;
+  font-size: inherit;
+  padding: 5px $paragraph-spacing-medium;
+  width: fit-content;
+  flex: 0 0 auto;
+  text-align: center;
+}
+
+.cookie-warning-wrapper.show-cookie-warning {
+  opacity: 1;
 }
 
 //*=========================================

@@ -5,7 +5,7 @@
 import * as Flickity from 'flickity';
 import 'flickity-imagesloaded';
 import { homepageParallax } from './animations';
-import { displayInstagramFeed } from './utils';
+import { displayInstagramFeed, cookieWarning } from './utils';
 import { menuOpenerHandler, mainNavTrigger } from './lib';
 
 // *==============================================================================
@@ -37,3 +37,7 @@ displayInstagramFeed();
 
 // ********** Main Nav **********
 mainNavTrigger.addEventListener('click', menuOpenerHandler);
+
+// ********** Cookie Warning **********
+
+cookieWarning();

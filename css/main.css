@@ -839,5 +839,62 @@ body:not(.user-is-tabbing) textarea:focus {
 }
 
 .cookie-warning-wrapper {
-  display: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 99%;
+  padding: 1rem;
+  font-size: 2rem;
+  background-color: #3f80c2;
+  opacity: 0;
+  z-index: 10;
+  transition: all 0.5s 0.25s;
+}
+@media (max-width: 850px) {
+  .cookie-warning-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.cookie-warning-paragraph {
+  margin: 0 20rem 0 0;
+  color: #f4f1f0;
+}
+@media (max-width: 1300px) {
+  .cookie-warning-paragraph {
+    margin: 0 2.5rem 0 0;
+  }
+}
+@media (max-width: 850px) {
+  .cookie-warning-paragraph {
+    text-align: center;
+    margin: 0 0 2.5rem;
+  }
+}
+
+.cookie-warning-link {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.cookie-warning-button {
+  background-color: transparent;
+  border: 2px solid #f4f1f0;
+  color: #f4f1f0;
+  font-size: inherit;
+  padding: 5px 5rem;
+  width: -webkit-fit-content;
+  width: fit-content;
+  flex: 0 0 auto;
+  text-align: center;
+}
+
+.cookie-warning-wrapper.show-cookie-warning {
+  opacity: 1;
 }
