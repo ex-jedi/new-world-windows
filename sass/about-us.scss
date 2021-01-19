@@ -49,6 +49,11 @@
 
 .bio-wrapper {
   margin-bottom: $section-spacing-extra-small;
+  overflow: hidden;
+
+  @include breakpoint(700) {
+    margin-bottom: $paragraph-spacing-medium;
+  }
 
   &:last-of-type {
     margin-bottom: 0;

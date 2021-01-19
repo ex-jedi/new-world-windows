@@ -31,6 +31,12 @@
 
 .bio-wrapper {
   margin-bottom: 10rem;
+  overflow: hidden;
+}
+@media (max-width: 700px) {
+  .bio-wrapper {
+    margin-bottom: 5rem;
+  }
 }
 .bio-wrapper:last-of-type {
   margin-bottom: 0;
