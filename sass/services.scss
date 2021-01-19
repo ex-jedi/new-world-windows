@@ -10,6 +10,14 @@
 
 .services-section {
   padding: 0 $section-spacing-large $section-spacing-small;
+
+  @include breakpoint(1400) {
+    padding: 0 $section-spacing-small $section-spacing-small;
+  }
+
+  @include breakpoint(1200) {
+    padding: 0 $paragraph-spacing-medium $section-spacing-extra-small;
+  }
 }
 
 .full-width-repeater-image {
@@ -19,4 +27,18 @@
 
 .full-width-repeater-wrapper {
   margin-bottom: $section-spacing-small;
+
+  @include breakpoint(1300) {
+    margin-bottom: $section-spacing-extra-small;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  p {
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
 }

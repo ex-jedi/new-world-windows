@@ -19,7 +19,7 @@
 										), true);
 	$mainsitename      = "New World Windows";
 	$pagetitlename = " - New World Windows";
-	$sharing_image = '/images/new-world-windows-logo.png';
+	$sharing_image = '/images/default-sharing-image.png';
 
 	PerchSystem::set_var('domain',$domain);
 	PerchSystem::set_var('mainurl',$mainurl);
@@ -31,20 +31,18 @@
 		'template' => 'default.html'
 	));
 	?>
-<!-- Google Analytics -->
-<?php perch_content('Analytics'); ?>
-
-<!-- Cookie Warning -->
-<?php perch_content("Cookie Warning"); ?>
 
 </head>
-	<body class="<?php perch_page_attribute('bodyClass', array('template' => 'bits.html' )); ?>">
+<!-- Cookie Warning -->
+<body class="<?php perch_page_attribute('bodyClass', array('template' => 'bits.html' )); ?>">
+	<?php perch_content("Cookie Warning"); ?>
 	<div class="site-wrapper" itemscope itemtype="http://schema.org/LocalBusiness">
 		<header class="main-header">
 			<!-- Skip to main content link  -->
 			<a class="show-on-focus"  href="#main-content">Skip to main content</a>
 			<div class="header-nav-bar">
 				<?php perch_content("Main Logo"); ?>
+				<?php perch_content("Header Phone Number"); ?>
 			<?php perch_pages_navigation(array(
 					'hide-extensions' => true,
 			)); ?>

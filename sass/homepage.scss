@@ -7,6 +7,15 @@
 @use 'bits' as *; //Contains variables, media queries mixins etc.
 
 //*=========================================
+//** General Styles **
+//*=========================================
+
+.homepage-subheading-link {
+  color: $font-colour-blue;
+  @include link-underline($font-colour-blue);
+}
+
+//*=========================================
 //** Three Image Section **
 //*=========================================
 
@@ -14,19 +23,47 @@
   @include flex(row);
   justify-content: space-between;
   width: 100%;
+
+  @include breakpoint(1300) {
+    @include flex(column);
+  }
+}
+
+.three-image-subheading {
+  font-size: $font-size-medium;
+  margin-bottom: $heading-spacing-small;
 }
 
 .three-image-block-wrapper {
   flex: 0 1 auto;
   width: 30%;
+
+  @include breakpoint(1300) {
+    width: 33%;
+  }
+
+  @include breakpoint(1300) {
+    width: 100%;
+    margin-bottom: $section-spacing-extra-small;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.three-image-image-wrapper {
+  width: 100%;
 }
 
 .three-image-image {
-  margin-bottom: $paragraph-spacing-medium;
+  width: 100%;
+  margin: 0 auto $paragraph-spacing-medium;
 }
 
 .three-image-paragraph {
   text-align: center;
+  margin-bottom: 0;
 }
 
 //*=========================================
@@ -37,6 +74,10 @@
   @include flex(row);
   justify-content: flex-start;
   height: auto;
+
+  @include breakpoint(1200) {
+    @include flex(column);
+  }
 }
 
 .section-image-wrapper,
@@ -44,6 +85,10 @@
   flex: 1 1 auto;
   width: 50%;
   height: auto;
+
+  @include breakpoint(1200) {
+    width: 100%;
+  }
 }
 
 .section-image {
@@ -58,7 +103,20 @@
   padding: $paragraph-spacing-large;
   font-size: $font-size-main;
 
-  p {
+  @include breakpoint(1400) {
+    padding: $paragraph-spacing-smaller;
+  }
+}
+
+.left-image-wrapper {
+  @include breakpoint(1400) {
+    order: 2;
+  }
+}
+
+.right-text-wrapper {
+  @include breakpoint(1400) {
+    order: 1;
   }
 }
 
@@ -75,6 +133,7 @@
 .parallax-image-wrapper {
   height: 100vh;
 }
+
 .parallax-image {
   height: 100%;
   width: 100%;
@@ -201,16 +260,20 @@
 }
 
 .testimonial-wrapper {
-  @include flex(row);
   width: 100%;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .testimonial-image-wrapper {
-  flex: 1 1 auto;
+  float: left;
   width: 30%;
-  margin-right: $paragraph-spacing-medium;
+  margin: 0 $paragraph-spacing-small $paragraph-spacing-small 0;
+
+  @include breakpoint(700) {
+    width: 100%;
+    margin-bottom: $paragraph-spacing-medium;
+  }
 }
 
 .testimonial-image {
@@ -220,8 +283,7 @@
 }
 
 .testimonial-text-wrapper {
-  flex: 1 1 auto;
-  width: 70%;
+  width: 100%;
   margin: 0;
 }
 

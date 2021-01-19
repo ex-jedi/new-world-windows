@@ -12,6 +12,14 @@
 
 .about-us-section {
   padding: 0 $section-spacing-large $section-spacing-small;
+
+  @include breakpoint(1400) {
+    padding: 0 $section-spacing-small $section-spacing-extra-small;
+  }
+
+  @include breakpoint(1200) {
+    padding: 0 $paragraph-spacing-tiny $section-spacing-extra-small;
+  }
 }
 
 .full-width-image {
@@ -41,19 +49,27 @@
 
 .bio-wrapper {
   margin-bottom: $section-spacing-extra-small;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .bio-flex-wrapper {
-  @include flex(row);
   width: 100%;
   justify-content: space-between;
   align-items: center;
 }
 
 .bio-image-wrapper {
-  flex: 1 1 auto;
+  float: left;
   width: 30%;
-  margin-right: $paragraph-spacing-medium;
+  margin-right: $paragraph-spacing-small;
+
+  @include breakpoint(700) {
+    width: 100%;
+    margin: 0 auto $paragraph-spacing-medium;
+  }
 }
 
 .bio-image {
@@ -63,13 +79,13 @@
 }
 
 .bio-text-wrapper {
-  flex: 1 1 auto;
-  width: 70%;
+  width: 100%;
   margin: 0;
 }
 
 .bio-name {
   margin-bottom: $paragraph-spacing-small;
+  width: fit-content;
 }
 
 .bio-paragraph {

@@ -42,7 +42,8 @@ $font-size-tiny: 1rem;
 $heading-size-extra-large: $font-size-extra-large;
 $heading-size-large: $font-size-larger;
 $heading-size-medium: $font-size-large;
-$heading-size-small: $font-size-main;
+$heading-size-small: $font-size-medium;
+$heading-size-extra-small: $font-size-main;
 
 //* Forms
 $input-font-size: $font-size-small;
@@ -50,6 +51,7 @@ $input-font-size: $font-size-small;
 //********** Spacing **********
 
 //* Header Spacing
+$heading-spacing-super-large: 12rem;
 $heading-spacing-extra-large: 10rem;
 $heading-spacing-large: 10rem;
 $heading-spacing-medium: 8rem;
@@ -165,6 +167,11 @@ $transition-two-cubic: $timing-duration-slow $cubic-one 0s;
   transition: all $transition-two;
   border-bottom: 4px solid transparent;
   padding-bottom: 5px;
+  text-decoration: none;
+
+  @include breakpoint(1200) {
+    text-decoration: underline;
+  }
 
   &:hover,
   &focus {
@@ -173,8 +180,10 @@ $transition-two-cubic: $timing-duration-slow $cubic-one 0s;
     margin-bottom: 5px;
     outline: 0;
 
-    @include breakpoint(800) {
-      border-bottom: 3px solid transparent;
+    @include breakpoint(1200) {
+      border-bottom: 4px solid transparent;
+      margin-bottom: $paragraph-spacing-small;
+      padding: 0;
     }
   }
 }

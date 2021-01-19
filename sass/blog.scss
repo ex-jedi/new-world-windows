@@ -1,0 +1,140 @@
+//*==============================================================================
+//** Blog SCSS **
+//*==============================================================================
+
+//********** Imports **********
+
+@use 'bits' as *; //Contains variables, media queries mixins etc.
+
+//*=========================================
+//** General styles **
+//*=========================================
+
+.blog-post-header {
+  height: auto;
+  padding: 0;
+}
+
+.blog-image {
+  max-height: 90vh;
+  margin: 0 auto;
+}
+
+//*=========================================
+//** Blog Index **
+//*=========================================
+
+.blog-index-section {
+  @include breakpoint(1300) {
+    // padding: 0 $section-spacing-small $section-spacing-small;
+  }
+}
+
+.blog-index-item {
+  margin-bottom: $section-spacing-medium;
+
+  @include breakpoint(1400) {
+    margin-bottom: $section-spacing-small;
+  }
+
+  @include breakpoint(1400) {
+    margin-bottom: $section-spacing-extra-small;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.blog-index-title {
+  text-align: center;
+}
+
+.blog-index-title-link {
+  @include link-underline($font-colour-blue);
+  color: $font-colour-blue;
+}
+
+.paging {
+  width: fit-content;
+  margin: 0 auto $section-spacing-medium;
+
+  a {
+    @include link-underline($font-colour-blue);
+    color: $font-colour-blue;
+  }
+
+  @include breakpoint(1400) {
+    margin-bottom: $section-spacing-small;
+  }
+
+  @include breakpoint(1200) {
+    margin-bottom: $section-spacing-extra-small;
+  }
+}
+
+//*=========================================
+//** Blog Post **
+//*=========================================
+
+.blog-post-article {
+  background-color: #fff;
+  padding: $section-spacing-medium $section-spacing-large
+    $section-spacing-medium;
+
+  @include breakpoint(1400) {
+    padding: $section-spacing-small $section-spacing-extra-small;
+  }
+
+  @include breakpoint(1400) {
+    padding: $section-spacing-extra-small $paragraph-spacing-tiny;
+  }
+}
+
+.blog-post-title {
+  font-size: $heading-size-large;
+  word-break: break-word;
+
+  @include breakpoint(500) {
+    font-size: $heading-size-medium;
+  }
+}
+
+.blog-post-image-wrapper {
+  width: 100%;
+  margin-bottom: $paragraph-spacing-large;
+}
+
+.blog-post-image {
+  width: 100%;
+  max-height: 100vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.blog-text-block {
+  margin-bottom: $paragraph-spacing-large;
+  p {
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.blog-embed {
+  @include flex(column);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto $paragraph-spacing-large;
+}
+
+.blog-general-embed {
+  iframe {
+    max-width: 100%;
+  }
+}
+
+.blog-post-date-author {
+  text-align: center;
+}

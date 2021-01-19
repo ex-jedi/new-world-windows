@@ -35,6 +35,7 @@ body {
   position: relative;
   min-width: 320px;
   max-width: 1920px;
+  overflow-x: hidden;
 }
 
 // *=========================================
@@ -47,18 +48,50 @@ h1 {
   font-size: $heading-size-extra-large;
   margin: 0 auto $heading-spacing-extra-large;
   width: fit-content;
+  word-break: break-word;
+
+  @include breakpoint(1300) {
+    font-size: $heading-size-large;
+    margin: 0 auto $heading-spacing-large;
+  }
+
+  @include breakpoint(1200) {
+    text-align: center;
+  }
 }
 
 h2 {
   font-size: $heading-size-large;
   margin: 0 auto $heading-spacing-large;
   width: fit-content;
+  word-break: break-word;
+
+  @include breakpoint(1300) {
+    margin: 0 auto $heading-spacing-medium;
+  }
+
+  @include breakpoint(1200) {
+    text-align: center;
+  }
+
+  @include breakpoint(500) {
+    font-size: $heading-size-small;
+  }
 }
 
 h3 {
-  font-size: $heading-size-medium;
+  font-size: $heading-size-small;
   margin: 0 auto $heading-spacing-medium;
   width: fit-content;
+  word-break: break-word;
+
+  @include breakpoint(1200) {
+    text-align: center;
+  }
+
+  @include breakpoint(500) {
+    font-size: $heading-size-extra-small;
+  }
 }
 
 h4 {
@@ -72,6 +105,14 @@ h4 {
 section {
   overflow: hidden;
   padding: 0 $section-spacing-extra-small $section-spacing-medium;
+
+  @include breakpoint(1400) {
+    padding: 0 $paragraph-spacing-small $section-spacing-small;
+  }
+
+  @include breakpoint(1200) {
+    // padding: 0 $paragraph-spacing-small $section-spacing-extra-small;
+  }
 }
 
 //********** Paragraphs **********
@@ -105,7 +146,8 @@ img {
 //********** Links **********
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
+  color: $font-colour-blue;
 }
 
 //********** Button **********
@@ -127,18 +169,19 @@ a {
 
 .header-nav-bar {
   @include flex(row);
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   padding: $paragraph-spacing-small;
   background-color: $background-colour-light;
   width: 100%;
-  height: 20vh;
-  overflow: hidden;
+  // overflow: hidden;
+  position: relative;
 }
 
 .main-nav {
   width: fit-content;
   margin: 0;
+  margin-left: auto;
 }
 
 .main-nav-link {
@@ -148,6 +191,15 @@ a {
   font-weight: bold;
   color: $font-colour-dark;
   @include link-underline($font-colour-dark);
+
+  @include breakpoint(1400) {
+    margin: 0 $paragraph-spacing-small 0 0;
+  }
+
+  @include breakpoint(1200) {
+    margin: 0 auto $paragraph-spacing-small;
+    padding: 0;
+  }
 
   &:last-of-type {
     margin: 0;
@@ -163,7 +215,104 @@ a {
   display: none;
 }
 
+.header-phone-contact-link {
+  font-size: $font-size-medium;
+  color: $font-colour-blue;
+  margin-left: $paragraph-spacing-medium;
+  text-decoration: none;
+
+  @include breakpoint(1400) {
+    margin-left: $paragraph-spacing-small;
+  }
+}
+
 //********** Responsive Styles **********
+
+.header-nav-bar {
+  align-items: center;
+
+  @include breakpoint(900) {
+    @include flex(column);
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15rem $paragraph-spacing-tiny $paragraph-spacing-medium;
+  }
+}
+
+.main-nav {
+  @include breakpoint(1200) {
+    @include flex(column);
+    align-items: center;
+    width: 100%;
+    padding: $section-spacing-extra-small $paragraph-spacing-small;
+    background-color: $background-colour-light;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateY(-100%);
+    transition: 0.4s all ease;
+  }
+
+  @include breakpoint(900) {
+    padding-top: $section-spacing-small;
+  }
+}
+
+.main-nav-link {
+  @include breakpoint(1200) {
+    font-size: $font-size-medium;
+  }
+}
+
+.main-nav-reveal {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.main-nav-trigger-wrapper {
+  @include breakpoint(1200) {
+    display: block;
+    z-index: 2;
+    margin-left: auto;
+  }
+
+  @include breakpoint(900) {
+    position: absolute;
+    top: $paragraph-spacing-medium;
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+
+.main-nav-trigger {
+  font-weight: bold;
+  border-width: 4px;
+  border-style: solid;
+  transition: 0.3s all ease;
+  background-color: $background-colour-light;
+  color: $font-colour-blue;
+  border-color: $font-colour-blue;
+  padding: $paragraph-spacing-tiny;
+  min-width: 220px;
+  cursor: pointer;
+}
+
+#main-nav-current {
+  @include breakpoint(1200) {
+    text-decoration: none;
+  }
+}
+
+.header-phone-contact-link {
+  @include breakpoint(900) {
+    margin: 0 0 $paragraph-spacing-small;
+    text-align: center;
+  }
+
+  @include breakpoint(350) {
+    font-size: $font-size-main;
+  }
+}
 
 //*=========================================
 //** Header **
@@ -172,12 +321,26 @@ a {
 .main-header {
   position: relative;
   padding-bottom: $section-spacing-medium;
+  position: relative;
+
+  @include breakpoint(1400) {
+    padding-bottom: $section-spacing-small;
+  }
+
+  @include breakpoint(1300) {
+    padding-bottom: $section-spacing-extra-small;
+  }
 }
 
 .main-logo-wrapper {
   width: 100%;
   height: auto;
   max-width: 150px;
+
+  @include breakpoint(900) {
+    margin: $paragraph-spacing-small auto $paragraph-spacing-medium;
+    max-width: 400px;
+  }
 }
 
 .main-logo {
@@ -188,19 +351,29 @@ a {
 .header-content-wrapper {
   @include flex(row);
   justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  height: 70vh;
+
+  @include breakpoint(1300) {
+    @include flex(column);
+  }
 }
 
 .header-text-wrapper,
 .header-main-image-wrapper {
   flex: 1 0 auto;
   width: 50%;
-  height: 100%;
   overflow: hidden;
   margin: 0;
   background-color: $background-colour-one;
+  max-height: 100vh;
+
+  @include breakpoint(1300) {
+    width: 100%;
+  }
+
+  @include breakpoint(900) {
+    max-height: 150vh;
+    height: 100%;
+  }
 }
 
 .header-text-wrapper {
@@ -209,15 +382,30 @@ a {
   justify-content: space-around;
   padding: $paragraph-spacing-medium;
   color: $font-colour-light;
+
+  @include breakpoint(500) {
+    padding: $paragraph-spacing-small;
+  }
 }
 
 .main-header-heading {
-  margin: 0;
+  margin: 0 0 $paragraph-spacing-small;
+  text-align: left;
+
+  @include breakpoint(500) {
+    font-size: $heading-size-medium;
+  }
 }
 
 .header-subheading {
   font-size: $font-size-medium;
   font-weight: normal;
+  width: 100%;
+  text-align: left;
+
+  @include breakpoint(1300) {
+    // font-size: $font-size-main;
+  }
 }
 
 .header-link {
@@ -232,6 +420,7 @@ a {
   background-color: $background-colour-one;
   color: $font-colour-light;
   border-color: $font-colour-light;
+  text-decoration: none;
 
   &:hover {
     color: $font-colour-blue;
@@ -269,6 +458,15 @@ body {
   background-color: $background-colour-one;
   color: $font-colour-light;
   padding: $section-spacing-extra-small $section-spacing-medium;
+  overflow: hidden;
+
+  @include breakpoint(1400) {
+    padding: $section-spacing-extra-small $section-spacing-extra-small;
+  }
+
+  @include breakpoint(900) {
+    padding: $section-spacing-extra-small $paragraph-spacing-tiny;
+  }
 }
 
 .general-contact-form-wrapper {
@@ -278,10 +476,16 @@ body {
 
 .general-contact-form-input-wrapper {
   @include flex(row);
-  justify-content: flex-end;
+  justify-content: center;
   align-items: flex-start;
   font-size: $font-size-main;
   margin-bottom: $section-spacing-small;
+
+  @include breakpoint(900) {
+    @include flex(column);
+    width: 100%;
+    margin-bottom: $section-spacing-extra-small;
+  }
 }
 
 .contact-form-subheading {
@@ -290,15 +494,15 @@ body {
 }
 
 .general-contact-form-label {
-  width: $section-spacing-large;
+  width: $section-spacing-small;
   flex: 0 1 auto;
   font-weight: 700;
   vertical-align: bottom;
   line-height: 0.7;
 
-  @include breakpoint(700) {
-    line-height: normal;
-    margin-bottom: $paragraph-spacing-medium;
+  @include breakpoint(900) {
+    width: auto;
+    margin-bottom: $paragraph-spacing-small;
   }
 }
 
@@ -312,13 +516,13 @@ body {
   padding: 1rem;
   transition: $transition-two;
 
-  @include breakpoint(700) {
-    width: 100%;
-  }
-
   &:focus,
   &:active {
     border: 3px solid $accent-colour-one;
+  }
+
+  @include breakpoint(900) {
+    width: 100%;
   }
 }
 
@@ -332,6 +536,13 @@ body {
 .contact-consent-link {
   color: $font-colour-light;
   text-decoration: underline;
+}
+
+.contact-form-consent {
+  @include breakpoint(700) {
+    font-size: $font-size-small;
+    margin-right: 1rem;
+  }
 }
 
 //* Inherit fonts for inputs and buttons
@@ -414,6 +625,7 @@ select {
   font-weight: bold;
   border-radius: 0;
   transition: all ease $timing-duration-medium;
+  -webkit-appearance: none;
 
   &:hover {
     background-color: $background-colour-light;
@@ -465,6 +677,11 @@ select {
   width: 200px;
   margin: 0.5rem;
 
+  @include breakpoint(900) {
+    width: 100px;
+    height: 100px;
+  }
+
   &:first-of-type {
     margin-left: 0;
   }
@@ -491,6 +708,16 @@ select {
   overflow: hidden;
   color: $font-colour-light;
 
+  @include breakpoint(1400) {
+    font-size: $font-size-small;
+  }
+
+  @include breakpoint(1100) {
+    @include flex(column);
+    align-items: center;
+    padding: $paragraph-spacing-medium;
+  }
+
   a {
     color: $font-colour-light;
   }
@@ -501,11 +728,20 @@ select {
 .footer-legals {
   flex: 1 0 auto;
   width: 30%;
+
+  @include breakpoint(1100) {
+    width: 100%;
+  }
 }
 
 .footer-contact-div {
   @include flex(column);
+  justify-content: flex-start;
   align-items: center;
+
+  @include breakpoint(1100) {
+    margin-bottom: $paragraph-spacing-large;
+  }
 
   span {
     margin-bottom: $paragraph-spacing-tiny;
@@ -520,6 +756,10 @@ select {
   @include flex(row);
   align-items: flex-start;
   justify-content: center;
+
+  @include breakpoint(1100) {
+    margin-bottom: $paragraph-spacing-large;
+  }
 }
 
 .footer-social-media-link {
@@ -533,10 +773,15 @@ select {
 
 .footer-legals {
   @include flex(column);
+  justify-content: space-between;
   align-items: center;
 
   a {
     text-decoration: underline;
+  }
+
+  p {
+    margin: 0 auto $paragraph-spacing-tiny;
   }
 }
 
@@ -600,9 +845,63 @@ body:not(.user-is-tabbing) textarea:focus {
   }
 }
 
-//********** Cookie Warning **********
+//*=========================================
+//** Cookie Warning **
+//*=========================================
+
 .cookie-warning-wrapper {
-  display: none;
+  @include flex(row);
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 99%;
+  padding: 1rem;
+  font-size: $font-size-small;
+  background-color: $background-colour-one;
+  opacity: 0;
+  z-index: 10;
+  transition: all 0.5s 0.25s;
+
+  @include breakpoint(850) {
+    @include flex(column);
+  }
+}
+
+.cookie-warning-paragraph {
+  margin: 0 $section-spacing-small 0 0;
+  color: $font-colour-light;
+
+  @include breakpoint(1300) {
+    margin: 0 $paragraph-spacing-small 0 0;
+  }
+
+  @include breakpoint(850) {
+    text-align: center;
+    margin: 0 0 $paragraph-spacing-small;
+  }
+}
+
+.cookie-warning-link {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.cookie-warning-button {
+  background-color: transparent;
+  border: 2px solid $font-colour-light;
+  color: $font-colour-light;
+  font-size: inherit;
+  padding: 5px $paragraph-spacing-medium;
+  width: fit-content;
+  flex: 0 0 auto;
+  text-align: center;
+}
+
+.cookie-warning-wrapper.show-cookie-warning {
+  opacity: 1;
 }
 
 //*=========================================

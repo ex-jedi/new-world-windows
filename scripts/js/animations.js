@@ -19,16 +19,20 @@ ScrollTrigger.batch('.fade-in-rotate', {
 // ********** Homepage Parallax Image **********
 
 function homepageParallax() {
-  gsap.to('.parallax-image', {
-    yPercent: -30,
-    ease: 'none',
-    scrollTrigger: {
-      trigger: '.parallax-image-section',
-      start: 'top bottom',
-      end: 'bottom',
-      scrub: 0.5,
-    },
-  });
+  gsap.fromTo(
+    '.parallax-image',
+    { yPercent: -40 },
+    {
+      yPercent: 0,
+      ease: 'none',
+      scrollTrigger: {
+        trigger: '.parallax-image-section',
+        start: 'top bottom',
+        end: 'bottom',
+        scrub: true,
+      },
+    }
+  );
 }
 
 export { homepageParallax };

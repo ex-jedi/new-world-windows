@@ -9,7 +9,7 @@
 				<a href="/terms">Terms of use</a>
 			</p>
 			<p class="footer-copyright" >
-				&copy; <?php echo date("Y"); ?> <span itemprop="name">New World Windows
+				&copy; <?php echo date("Y"); ?> <span itemprop="name">New World Windows</span>
 			</p>
 			<p class="footer-credit">
 				Web design & development, brand design & illustration by <a href="" class="promo-link">phoenix & phoenix</a>

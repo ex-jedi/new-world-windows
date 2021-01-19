@@ -1,0 +1,33 @@
+<perch:before>
+  <section class="blog-section blog-index-section">
+</perch:before>
+  <div class="blog-index-item">
+    <h2 class="blog-index-title">
+      <a class="blog-index-title-link" href="<perch:blog id="postURL"/>">
+        <perch:blog id="postTitle" />
+      </a>
+    </h2>
+    <img class="blog-image blog-index-image" loading="lazy" itemprop="image" src="<perch:blog id="blogPostMainImage">" alt="<perch:blog id="alt">"
+    sizes="75vw"
+    srcset="<perch:blog type="image" id="blogPostMainImage" width="1700" > 1700w,
+    <perch:blog type="image" id="blogPostMainImage" width="1500" > 1500w,
+    <perch:blog type="image" id="blogPostMainImage" width="1200" > 1200w,
+    <perch:blog type="image" id="blogPostMainImage" width="900" > 900w,
+    <perch:blog type="image" id="blogPostMainImage" width="600" > 600w" >
+  </div>
+<perch:after>
+</section>
+  <perch:if exists="paging">
+    <div class="paging">
+      Page <perch:blog id="current_page" /> of <perch:blog id="number_of_pages" />
+      <perch:blog id="page_links" encode="false" />
+      <perch:if exists="not_first_page">
+        <a href="<perch:blog id="prev_url" encode="false" />">Previous</a>
+      </perch:if>
+      <perch:if exists="not_last_page">
+        <a href="<perch:blog id="next_url" encode="false" />">Next</a>
+      </perch:if>
+    </div>
+  </perch:if>
+</perch:after>
+
