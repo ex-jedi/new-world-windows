@@ -9,7 +9,7 @@
      <perch:if exists="testimonialImage">
        <div class="testimonial-image-wrapper">
          <img class="testimonial-image" itemprop="image" src="<perch:content id="testimonialImage" type="image" width="1200" height="1200" label="Optional Testimonial Image" help="Images should be at least 1200px by 1200px" quality="70" order="1" crop>" alt="<perch:content id="alt" type="text" order="2" label="Image description">"
-         sizes="30vw"
+         sizes="(max-width:700px) 100vw, 30vw"
          srcset="<perch:content type="image" id="testimonialImage" width="1200" height="1200" crop> 1200w,
          <perch:content type="image" id="testimonialImage" width="900" height="900" quality="70" crop> 900w,
          <perch:content type="image" id="testimonialImage" width="700" height="700" quality="70" crop> 700w,
@@ -24,12 +24,12 @@
        <perch:if exists="testimonialLink">
         <p class="testimonial-name">
           <a href="<perch:content id="testimonialLink" type="text" label="Optional Testimonial Link" order="5">" class="testimonial-link">
-            <perch:content id="testimonialLinktext" type="text" label="Testimonial Name" order="4">
+              <perch:content id="testimonialLinktext" type="text" label="Testimonial Name" order="4" required>
           </a>
         </p>
         <perch:else>
         <p class="testimonial-name">
-           <perch:content id="testimonialLinktext">
+            <perch:content id="testimonialLinktext">
         </p>
        </perch:if>
 
