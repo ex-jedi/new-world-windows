@@ -18,11 +18,11 @@
        </div>
      </perch:if>
      <blockquote class="testimonial-text-wrapper">
-       <p class="testimonial-paragraph">
+       <p class="testimonial-paragraph" itemprop="reviewBody">
          "<perch:content id="testemonialText" type="textarea" size="s" label="Testimonial Text" order="3">"
        </p>
        <perch:if exists="testimonialLink">
-        <p class="testimonial-name">
+        <p class="testimonial-name" itemprop="author">
           <a href="<perch:content id="testimonialLink" type="text" label="Optional Testimonial Link" order="5">" class="testimonial-link">
             <perch:content id="testimonialLinktext" type="text" label="Testimonial Name" order="4">
           </a>
