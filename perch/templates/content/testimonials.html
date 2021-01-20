@@ -22,14 +22,18 @@
          "<perch:content id="testemonialText" type="textarea" size="s" label="Testimonial Text" order="3">"
        </p>
        <perch:if exists="testimonialLink">
-        <p class="testimonial-name" itemprop="author">
+        <p class="testimonial-name">
           <a href="<perch:content id="testimonialLink" type="text" label="Optional Testimonial Link" order="5">" class="testimonial-link">
-            <perch:content id="testimonialLinktext" type="text" label="Testimonial Name" order="4" required>
+            <span itemprop="author">
+              <perch:content id="testimonialLinktext" type="text" label="Testimonial Name" order="4" required>
+            </span>
           </a>
         </p>
         <perch:else>
-        <p class="testimonial-name" itemprop="author">
-           <perch:content id="testimonialLinktext">
+        <p class="testimonial-name">
+          <span itemprop="author">
+            <perch:content id="testimonialLinktext">
+          </span>
         </p>
        </perch:if>
 
