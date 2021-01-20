@@ -6,5 +6,4 @@
 
 		</article>
 	</main>
-<?php perch_layout('main-footer'); ?>
-<?php perch_layout('blogpost-footer-end-js'); ?>
+<?php perch_layout('blog-post-footer'); ?>
