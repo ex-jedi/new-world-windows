@@ -5,7 +5,7 @@
   <div class="main-carousel">
  <perch:repeater id="testimonialsSlider" label="Testimonials Section">
 
-   <div class="testimonial-wrapper" itemprop="review">
+   <div class="testimonial-wrapper">
      <perch:if exists="testimonialImage">
        <div class="testimonial-image-wrapper">
          <img class="testimonial-image" itemprop="image" src="<perch:content id="testimonialImage" type="image" width="1200" height="1200" label="Optional Testimonial Image" help="Images should be at least 1200px by 1200px" quality="70" order="1" crop>" alt="<perch:content id="alt" type="text" order="2" label="Image description">"
@@ -17,7 +17,7 @@
          <perch:content type="image" id="testimonialImage" width="500" height="500" quality="70" crop> 500w" >
        </div>
      </perch:if>
-     <blockquote class="testimonial-text-wrapper">
+     <blockquote class="testimonial-text-wrapper" itemprop="review">
        <p class="testimonial-paragraph" itemprop="reviewBody">
          "<perch:content id="testemonialText" type="textarea" size="s" label="Testimonial Text" order="3">"
        </p>
