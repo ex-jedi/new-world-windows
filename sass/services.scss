@@ -16,7 +16,7 @@
   }
 
   @include breakpoint(1200) {
-    padding: 0 $paragraph-spacing-medium $section-spacing-extra-small;
+    padding: 0 $paragraph-spacing-tiny $section-spacing-extra-small;
   }
 }
 
