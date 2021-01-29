@@ -17,7 +17,8 @@
 
 .homepage-section {
   @include breakpoint(700) {
-    padding: 0 $paragraph-spacing-tiny $section-spacing-extra-small;
+    padding-left: $paragraph-spacing-tiny;
+    padding-right: $paragraph-spacing-tiny;
   }
 }
 
