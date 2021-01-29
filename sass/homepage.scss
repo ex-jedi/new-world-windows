@@ -134,6 +134,10 @@
   @include breakpoint(1400) {
     order: 1;
   }
+
+  @include breakpoint(1200) {
+    padding: 0;
+  }
 }
 
 //*=========================================
