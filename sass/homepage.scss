@@ -15,6 +15,13 @@
   @include link-underline($font-colour-blue);
 }
 
+.homepage-section {
+  @include breakpoint(700) {
+    padding-left: $paragraph-spacing-tiny;
+    padding-right: $paragraph-spacing-tiny;
+  }
+}
+
 //*=========================================
 //** Three Image Section **
 //*=========================================
@@ -127,6 +134,10 @@
 .right-text-wrapper {
   @include breakpoint(1400) {
     order: 1;
+  }
+
+  @include breakpoint(1200) {
+    padding: 0;
   }
 }
 
