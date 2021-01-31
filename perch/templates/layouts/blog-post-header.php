@@ -15,8 +15,10 @@
 		perch_page_attributes(array(
 			'template' => 'favicons.html'
 		));
-
 		?>
+
+		<?php perch_content("Analytics"); ?>
+
 </head>
 	<body class="<?php perch_page_attribute('bodyClass', array('template' => 'bits.html' )); ?>" >
 		<!-- Cookie Warning -->
