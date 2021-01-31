@@ -32,6 +32,8 @@
 	));
 	?>
 
+	<?php perch_content("Analytics"); ?>
+
 </head>
 <!-- Cookie Warning -->
 <body class="<?php perch_page_attribute('bodyClass', array('template' => 'bits.html' )); ?>">
