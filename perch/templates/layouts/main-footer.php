@@ -12,7 +12,7 @@
 				&copy; <?php echo date("Y"); ?> <span itemprop="name">New World Windows</span>
 			</p>
 			<p class="footer-credit">
-				Web development by <a href="" class="promo-link">phoenix & phoenix</a>
+				Web development by <a href="https://phoenixandphoenix.co/" class="promo-link">phoenix & phoenix</a>
 			</p>
 		</div>
 </footer>
