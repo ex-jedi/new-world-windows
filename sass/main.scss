@@ -380,7 +380,7 @@ a {
   color: $font-colour-light;
 
   @include breakpoint(500) {
-    padding: $paragraph-spacing-small;
+    padding: $paragraph-spacing-medium $paragraph-spacing-small;
   }
 }
 
