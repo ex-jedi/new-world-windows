@@ -2,11 +2,12 @@
    <h2 class="section-heading contact-form-heading">
      <perch:content id="contactFormHeading" type="text" label="Contact Form Heading" required>
    </h2>
-   <h3 class="contact-form-subheading">
-       <perch:content id="contactFormSubheading" type="text" label="Contact Form Subheading" required>
-   </h3>
+
   <div class="general-contact-form-wrapper">
       <perch:form class="general-contact-form" id="contact" method="post" app="perch_forms">
+          <h3 class="contact-form-subheading">
+              <perch:content id="contactFormSubheading" type="text" label="Contact Form Subheading" required>
+          </h3>
           <div class="general-contact-form-input-wrapper">
               <perch:label class="general-contact-form-label" for="name">Name<span class="required-marker" title="Required"> *</span></perch:label>
               <perch:input class="general-contact-form-input name-input" type="text" id="name" label="Name" required >
