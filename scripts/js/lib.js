@@ -12,12 +12,10 @@ function menuOpenerHandler() {
     mainNav.classList.add('main-nav-reveal');
     mainNav.dataset.state = 'open';
     mainNavTrigger.textContent = 'CLOSE MENU';
-    console.log('open');
   } else {
     mainNav.classList.remove('main-nav-reveal');
     mainNav.dataset.state = 'closed';
     mainNavTrigger.textContent = 'OPEN MENU';
-    console.log('close');
   }
 }
 

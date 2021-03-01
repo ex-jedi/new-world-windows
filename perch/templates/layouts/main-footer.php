@@ -18,4 +18,3 @@
 </footer>
 </div> <!-- wrapper div -->
 <!-- end js files  -->
-<!-- TODO: Check telephone works -->
